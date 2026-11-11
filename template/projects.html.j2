@@ -1,0 +1,30 @@
+{% extends "_base.html.j2" %}
+{% block title %}Dự án{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <h1 class="h1">Dự án</h1>
+    <p class="page-sub">Sáu bài tập, mỗi bài ứng với một chương của học phần, xếp theo thứ tự như một danh sách tiết mục. Chọn một bài để xem mục tiêu, cách làm và sản phẩm.</p>
+  </div>
+</section>
+
+<section class="setlist-wrap">
+  <div class="wrap">
+    <ol class="setlist">
+      {% for p in projects %}
+      <li>
+        <a class="set" href="project-{{ p.id }}.html" data-pitch="{{ loop.index0 }}">
+          <span class="set-no">{{ p.id }}</span>
+          <span class="set-main">
+            <span class="set-title">{{ p.title }}{% if p.demo_note %} <em class="demo-tag">bản mẫu do AI làm</em>{% endif %}</span>
+            <span class="set-ch">{{ p.chapter }}</span>
+          </span>
+          {% if p.tool and p.tool.strip() not in ['…', ''] %}<span class="set-tool">{{ p.tool.split(',')[0] }}</span>{% endif %}
+          <span class="set-head" aria-hidden="true"></span>
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% endblock %}

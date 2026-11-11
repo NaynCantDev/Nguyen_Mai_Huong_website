@@ -1,0 +1,221 @@
+{% extends "_base.html.j2" %}
+{% block title %}Bài {{ project.id }}: {{ project.title }}{% endblock %}
+
+{# ===== Khối sản phẩm (cùng định dạng data.yaml với các bản trước) ===== #}
+{% macro render_block(b) %}
+{% if b.title and b.type not in ['tree', 'showcase'] %}<h3 class="blk-title">{{ b.title }}</h3>{% endif %}
+
+{% if b.type == 'tree' %}
+<div class="tree-box">
+  <p class="tree-path">{{ b.title }}</p>
+  <ul class="tree">
+    {% for it in b['items'] %}
+    <li><span class="folder{{ ' open' if it.children }}">{{ it.name }}</span>
+      {% if it.children %}<ul>{% for c in it.children %}<li><span class="folder">{{ c }}</span></li>{% endfor %}</ul>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% elif b.type == 'table' %}
+<div class="tbl"><table>
+  <thead><tr>{% for h in b.headers %}<th scope="col">{{ h }}</th>{% endfor %}</tr></thead>
+  <tbody>{% for r in b.rows %}<tr>{% for c in r %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+</table></div>
+
+{% elif b.type == 'examples' %}
+<ul class="files">
+  {% for f in b['items'] %}{% set ext = f.rsplit('.', 1)[-1] %}<li><span class="ext">{{ ext }}</span>{{ f }}</li>{% endfor %}
+</ul>
+
+{% elif b.type == 'queries' %}
+<ul class="queries">
+  {% for q in b['items'] %}
+  <li><code class="q">{{ q.q }}</code><p><strong>{{ q.op }}</strong> {{ q.why }}</p></li>
+  {% endfor %}
+</ul>
+
+{% elif b.type == 'prompts' %}
+{% for it in b['items'] %}
+<div class="duet">
+  <p class="duet-task"><span>{{ loop.index }}</span>{{ it.task }}</p>
+  <div class="duet-pair">
+    <div class="voice v-before">
+      <p class="voice-name">Prompt ban đầu</p>
+      <p class="voice-prompt">{{ it.before.prompt }}</p>
+      <p class="voice-out"><em>AI trả lời</em>{{ it.before.output }}</p>
+    </div>
+    <div class="voice v-after">
+      <p class="voice-name">Prompt cải tiến</p>
+      <p class="voice-prompt">{{ it.after.prompt }}</p>
+      <p class="voice-out"><em>AI trả lời</em>{{ it.after.output }}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+{% elif b.type == 'scores' %}
+<div class="scores">
+  <p class="legend"><span class="sw before"></span>Prompt ban đầu <span class="sw after"></span>Prompt cải tiến</p>
+  {% for c in b.criteria %}
+  {% set v0 = b.before[loop.index0] %}{% set v1 = b.after[loop.index0] %}
+  <div class="score">
+    <span class="score-name">{{ c }}</span>
+    <span class="dots before" role="img" aria-label="Ban đầu {{ v0 }} trên 5">{% for k in range(5) %}<i class="{{ 'on' if k < v0 }}"></i>{% endfor %}</span>
+    <span class="dots after" role="img" aria-label="Cải tiến {{ v1 }} trên 5">{% for k in range(5) %}<i class="{{ 'on' if k < v1 }}"></i>{% endfor %}</span>
+  </div>
+  {% endfor %}
+</div>
+
+{% elif b.type == 'kanban' %}
+<div class="board">
+  {% for col in b.columns %}
+  <div class="lane">
+    <p class="lane-h">{{ col.name }} <span>{{ col.cards|length }}</span></p>
+    {% for c in col.cards %}<div class="ticket"><p>{{ c.t }}</p><small>{{ c.who }}, hạn {{ c.due }}</small></div>{% endfor %}
+  </div>
+  {% endfor %}
+</div>
+
+{% elif b.type == 'roles' %}
+<ul class="roles">
+  {% for r in b['items'] %}<li><span class="role-ic">{{ r.icon }}</span><div><strong>{{ r.who }}</strong><p>{{ r.task }}</p></div></li>{% endfor %}
+</ul>
+
+{% elif b.type == 'flow' %}
+<ol class="flow">{% for s in b['items'] %}<li>{{ s }}</li>{% endfor %}</ol>
+
+{% elif b.type == 'showcase' %}
+<div class="show">
+  <h3 class="show-t">{{ b.title }}</h3>
+  {% if b.subtitle %}<p class="show-s">{{ b.subtitle }}</p>{% endif %}
+  <ol class="show-steps">
+    {% for s in b.steps %}<li><span class="show-ic">{{ s.icon }}</span><strong>{{ s.t }}</strong><p>{{ s.d }}</p></li>{% endfor %}
+  </ol>
+</div>
+
+{% elif b.type == 'split' %}
+<div class="split">
+  {% for it in b['items'] %}<div class="split-row"><span>{{ it.label }}</span><span class="split-bar" style="--w:{{ it.pct }}%"><b>{{ it.pct }}%</b></span></div>{% endfor %}
+</div>
+
+{% elif b.type == 'principles' %}
+<ol class="rules">
+  {% for it in b['items'] %}<li><strong>{{ it.t }}</strong><p>{{ it.d }}</p></li>{% endfor %}
+</ol>
+
+{% elif b.type == 'scenarios' %}
+{% set labels = {'ok': 'Hợp lệ', 'gray': 'Vùng xám', 'bad': 'Vi phạm'} %}
+<ul class="cases">
+  {% for it in b['items'] %}<li class="case c-{{ it.v }}"><span class="verdict">{{ labels[it.v] }}</span><div><strong>{{ it.s }}</strong><p>{{ it.r }}</p></div></li>{% endfor %}
+</ul>
+
+{% elif b.type == 'refs' %}
+<ol class="refs">{% for r in b['items'] %}<li>{% if r is mapping %}{{ r.t }}{% if r.url %} <a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.link or 'Mở tài liệu' }}</a>{% endif %}{% else %}{{ r }}{% endif %}</li>{% endfor %}</ol>
+
+{% elif b.type == 'points' %}
+{% if b.intro %}<p class="pts-intro">{{ b.intro }}</p>{% endif %}
+<dl class="pts">
+  {% for it in b['items'] %}<div><dt>{{ it.t }}</dt><dd>{{ it.d }}</dd></div>{% endfor %}
+</dl>
+
+{% elif b.type == 'prompt_lab' %}
+{# Bài 3: mỗi tác vụ 3 phiên bản prompt (cơ bản / cải tiến / nâng cao) #}
+{% for it in b['items'] %}
+<div class="lab">
+  <p class="duet-task"><span>{{ loop.index }}</span>{{ it.task }}</p>
+  {% if it.analysis %}<p class="lab-why">{{ it.analysis }}</p>{% endif %}
+  <div class="lab-row">
+    {% for v in it.versions %}
+    <div class="voice lab-v lv-{{ loop.index }}">
+      <p class="voice-name">{{ v.level }}</p>
+      {% if v.techniques %}<p class="lab-tech">{% for t in v.techniques %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
+      <p class="voice-prompt">{{ v.prompt }}</p>
+      <p class="voice-out"><em>AI trả lời (trích)</em>{{ v.output }}</p>
+      {% if v.shot_src %}<a class="lab-shot" href="{{ v.shot_src }}" target="_blank" rel="noopener"><img src="{{ v.shot_src }}" alt="Ảnh chụp kết quả: {{ v.level }}" loading="lazy"></a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% if it.insight %}<p class="lab-insight"><strong>Vì sao khác nhau:</strong> {{ it.insight }}</p>{% endif %}
+</div>
+{% endfor %}
+
+{% elif b.type == 'note' %}
+<p class="margin-note"><span class="hand">ghi chú</span>{{ b.text }}</p>
+{% endif %}
+{% endmacro %}
+
+{% block content %}
+{% set p = project %}
+{% set empty = (p.objective or '…').strip() in ['…', ''] %}
+<section class="page-head proj-head">
+  <div class="wrap">
+    <a class="back" href="projects.html">Quay lại Dự án</a>
+    <div class="proj-title">
+      <span class="proj-no" aria-hidden="true">{{ p.id }}</span>
+      <div>
+        <h1 class="h1"><span class="sr">Bài {{ p.id }}: </span>{{ p.title }}</h1>
+        <p class="proj-ch">{{ p.chapter }}{% if p.section %}, mục {{ p.section }}{% endif %}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap proj">
+  <aside class="proj-side">
+    <dl class="facts tight">
+      <div><dt>Bài</dt><dd>{{ p.id }} / {{ projects|length }}</dd></div>
+      {% if p.section %}<div><dt>Mục</dt><dd>{{ p.section }}</dd></div>{% endif %}
+      <div><dt>Chương</dt><dd>{{ p.chapter }}</dd></div>
+      <div><dt>Công cụ</dt><dd>{{ p.tool }}</dd></div>
+      <div><dt>Sử dụng AI</dt><dd>{{ p.ai_use }}</dd></div>
+    </dl>
+    <nav class="seq" aria-label="Chuyển bài">
+      <span class="seq-staff" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      {% for pp in projects %}<a href="project-{{ pp.id }}.html" style="--n:{{ loop.index0 }}"{{ ' aria-current="page"' if pp.id == p.id }} title="Bài {{ pp.id }}: {{ pp.title }}"><span class="sr">Bài {{ pp.id }}</span></a>{% endfor %}
+    </nav>
+  </aside>
+
+  <article class="proj-body">
+    {% if p.demo_note %}<aside class="demo-note" role="note"><strong>Bài mẫu do AI thực hiện</strong><p>{{ p.demo_note }}</p></aside>
+    {% elif empty %}<p class="pending hand">bài này mình đang hoàn thiện, quay lại sau nhé</p>{% endif %}
+
+    <section class="part">
+      <h2 class="h3">Mục tiêu</h2>
+      <p class="lead">{{ p.objective }}</p>
+    </section>
+
+    <section class="part">
+      <h2 class="h3">Quá trình thực hiện</h2>
+      {% set steps = p.process if p.process is not string else p.process.strip().split('\n') %}
+      <ol class="bars">
+        {% for line in steps if line.strip() %}<li class="bar-{{ line.strip()|step_kind }}">{{ line.strip() }}</li>{% endfor %}
+      </ol>
+    </section>
+
+    <section class="part">
+      <h2 class="h3">Sản phẩm</h2>
+      {% if p.product %}
+        {% if p.product.intro %}<p class="lead">{{ p.product.intro }}</p>{% endif %}
+        {% for b in p.product.blocks %}<div class="blk">{{ render_block(b) }}</div>{% endfor %}
+        {% if p.product.gallery %}
+        <div class="gallery">
+          {% for g in p.product.gallery %}<figure><a href="{{ g.src }}" target="_blank" rel="noopener"><img src="{{ g.src }}" alt="{{ g.caption }}" loading="lazy"></a><figcaption>{{ g.caption }}</figcaption></figure>{% endfor %}
+        </div>
+        {% endif %}
+        {% if p.product.video %}<div class="video"><iframe src="{{ p.product.video }}" title="Video sản phẩm" allowfullscreen loading="lazy"></iframe></div>{% endif %}
+        {% if p.product.links %}
+        <ul class="ext-links">{% for l in p.product.links %}<li><a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a></li>{% endfor %}</ul>
+        {% endif %}
+      {% else %}
+        <p class="lead">{{ p.result_desc }}</p>
+      {% endif %}
+    </section>
+
+    <nav class="pager" aria-label="Bài trước và bài sau">
+      {% if prev_p %}<a href="project-{{ prev_p.id }}.html"><small>Bài trước</small>{{ prev_p.title }}</a>{% else %}<span></span>{% endif %}
+      {% if next_p %}<a class="nx" href="project-{{ next_p.id }}.html"><small>Bài tiếp theo</small>{{ next_p.title }}</a>{% else %}<a class="nx" href="conclusion.html"><small>Tiếp theo</small>Tổng kết</a>{% endif %}
+    </nav>
+  </article>
+</div>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends "_base.html.j2" %}
+{% block title %}Giới thiệu{% endblock %}
+{% block content %}
+{% set words = name.split(' ') %}
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-score">
+      <p class="hero-hello">Xin chào, mình là</p>
+      <h1 class="singing" id="singing" aria-label="{{ name }}">
+        <span class="staff" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        {% set ns = namespace(i=0) %}
+        <span class="row" aria-hidden="true">{% for ch in words[0] %}<span class="ltr" data-i="{{ ns.i }}">{{ ch }}</span>{% set ns.i = ns.i + 1 %}{% endfor %}</span>
+        <span class="row" aria-hidden="true">{% for w in words[1:] %}{% for ch in w %}<span class="ltr" data-i="{{ ns.i }}">{{ ch }}</span>{% set ns.i = ns.i + 1 %}{% endfor %}{% if not loop.last %}<span class="rest"> </span>{% endif %}{% endfor %}</span>
+      </h1>
+      <div class="hero-play">
+        <button class="sing-btn" id="singBtn" type="button"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3.5v13l11-6.5z"/></svg>Nghe tên mình</button>
+        <p class="hand hint">mỗi chữ là một nốt, <span class="h-mouse">rê chuột qua thử xem</span><span class="h-touch">chạm vào từng chữ thử xem</span></p>
+      </div>
+      <p class="hero-bio">{{ short_bio }}</p>
+    </div>
+
+    <figure class="portrait">
+      {% if avatar_url %}<img src="{{ avatar_url }}" alt="Ảnh chân dung {{ name }}" width="376" height="512">{% else %}<div class="portrait-empty">{{ avatar_emoji }}</div>{% endif %}
+      <figcaption class="hand">{{ about.hobbies|lower }}, và một chút công nghệ</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap about-in">
+    <h2 class="h2">Về mình</h2>
+    <div class="about-body">
+      <p class="lead">{{ about.intro }}</p>
+      <dl class="facts">
+        <div><dt>Ngành</dt><dd>{{ major }}</dd></div>
+        {% if student_id %}<div><dt>Mã sinh viên</dt><dd>{{ student_id }}</dd></div>{% endif %}
+        {% if birthday %}<div><dt>Ngày sinh</dt><dd>{{ birthday }}</dd></div>{% endif %}
+        {% if class %}<div><dt>Lớp</dt><dd>{{ class }}</dd></div>{% endif %}
+        <div><dt>Sở thích</dt><dd>{{ about.hobbies }}</dd></div>
+        <div><dt>Trường</dt><dd>{{ school }}</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="goals">
+  <div class="wrap">
+    <div class="goals-head">
+      <h2 class="h2">Mục tiêu học tập và định hướng</h2>
+      <p>Sau học phần Nhập môn Công nghệ số, mình muốn đạt được bốn điều.</p>
+    </div>
+    {% if about.learning_goals %}
+    {% set marks = ['vững vàng', 'đều đặn', 'cẩn trọng', 'vươn xa'] %}
+    <ol class="measures">
+      {% for g in about.learning_goals %}
+      <li class="measure">
+        <span class="mark hand">{{ marks[loop.index0 % 4] }}</span>
+        <h3>{{ g.title }}</h3>
+        <p>{{ g.text }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+    {% else %}
+    <div class="goal-plain">{% for para in about.learning_goal.split('\n\n') if para.strip() %}<p>{{ para.strip() }}</p>{% endfor %}</div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="purpose">
+  <div class="wrap purpose-in">
+    <h2 class="h2">Portfolio này để làm gì</h2>
+    <div>
+      <p class="lead">{{ about.portfolio_goal }}</p>
+      {% if about.portfolio_pillars %}
+      <ul class="pillars">
+        {% for p in about.portfolio_pillars %}<li><strong>{{ p.title }}</strong><span>{{ p.text }}</span></li>{% endfor %}
+      </ul>
+      {% endif %}
+      <a class="big-link" href="projects.html">Xem các dự án của mình</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

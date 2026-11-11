@@ -1,0 +1,34 @@
+{% extends "_base.html.j2" %}
+{% block title %}Tổng kết{% endblock %}
+{% block content %}
+{% set c = conclusion %}
+<section class="page-head">
+  <div class="wrap">
+    <h1 class="h1">Tổng kết</h1>
+    <p class="page-sub">Nhìn lại cả học phần sau sáu bài tập.</p>
+  </div>
+</section>
+
+<section class="wrap conc">
+  <blockquote class="conc-quote"><p>{{ c.experience }}</p></blockquote>
+
+  <div class="conc-grid">
+    <div class="conc-skills">
+      <h2 class="h3">Kiến thức và kỹ năng mình có được</h2>
+      <ul class="ticks">{% for s in c.key_skills %}<li>{{ s }}</li>{% endfor %}</ul>
+    </div>
+    <div class="conc-notes">
+      <div><h2 class="h3">Bài mình tâm đắc nhất</h2><p>{{ c.highlight }}</p></div>
+      <div><h2 class="h3">Khó khăn và cách vượt qua</h2><p>{{ c.challenge }}</p></div>
+      <div><h2 class="h3">Hướng đi tiếp theo</h2><p>{{ c.future }}</p></div>
+    </div>
+  </div>
+
+  <h2 class="h3 conc-list-h">Các bài đã hoàn thành</h2>
+  <ol class="mini-set">
+    {% for p in projects %}<li><a href="project-{{ p.id }}.html"><span>{{ p.id }}</span>{{ p.title }}</a></li>{% endfor %}
+  </ol>
+
+  <p class="thanks hand">cảm ơn bạn đã ghé xem portfolio của mình!</p>
+</section>
+{% endblock %}

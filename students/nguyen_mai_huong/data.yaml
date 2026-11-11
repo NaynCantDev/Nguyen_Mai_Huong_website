@@ -1,0 +1,462 @@
+# =====================================================================
+#  DỮ LIỆU PORTFOLIO – NGUYỄN MAI HƯƠNG
+#  Sửa nội dung rồi chạy:  python scripts/render.py
+#  Mẫu đầy đủ phần bài tập: ..\Duong_Nhu_Quynh_web\students\duong_nhu_quynh\data.yaml
+# =====================================================================
+
+name: "Nguyễn Mai Hương"
+student_id: "2552210390"
+birthday: "07/06/2007"
+class: ""               # bắt buộc theo đề – điền khi có
+subject: "Nhập môn Công nghệ số và ứng dụng trí tuệ nhân tạo"
+school: "Trường Đại học Sư phạm Nghệ thuật Trung ương"
+email: ""
+major: "Sư phạm Âm nhạc"
+avatar_emoji: "🎹"
+avatar: "images/Nguyen_Mai_Huong.jpg"
+short_bio: "Sinh viên Sư phạm Âm nhạc yêu tiếng hát và phím đàn — đang học cách để công nghệ số và AI trở thành người bạn đồng hành trên con đường đứng lớp."
+hero_tags: ["🎤 Ca hát", "🎹 Phím đàn", "✨ AI cho giáo viên"]
+
+about:
+  intro: "Mình là Nguyễn Mai Hương, sinh viên ngành Sư phạm Âm nhạc. Âm nhạc là ngôn ngữ mình yêu nhất, và mình tin rằng một giáo viên âm nhạc hiện đại cũng cần biết dùng công nghệ số để học tốt hơn, dạy hay hơn."
+  hobbies: "Hát & đàn"
+  # 4 "chương nhạc" của mục tiêu học tập (hiển thị dạng I–II–III–IV)
+  learning_goals:
+    - title: "Làm chủ công cụ"
+      icon: "🛠️"
+      text: "Thành thạo các ứng dụng AI tạo sinh (Generative AI), công cụ tìm kiếm tri thức và phần mềm hỗ trợ quản lý học tập/dự án."
+    - title: "Tối ưu hóa học tập"
+      icon: "📈"
+      text: "Áp dụng AI vào việc lập kế hoạch, tổng hợp tài liệu, phân tích thông tin và cải thiện hiệu suất nghiên cứu bài học hằng ngày."
+    - title: "Cập nhật tư duy"
+      icon: "🛡️"
+      text: "Hình thành thói quen kiểm chứng thông tin (Fact-checking), bảo mật dữ liệu cá nhân và tuân thủ nguyên tắc đạo đức khi ứng dụng công nghệ."
+    - title: "Hướng tới bục giảng"
+      icon: "🎼"
+      text: "Vận dụng các ứng dụng AI trong giảng dạy và soạn giáo án trong tương lai."
+  learning_goal: |
+    Sau khi học xong học phần Nhập môn Công nghệ số, em có thể làm chủ công cụ, tối ưu hóa việc học và cập nhật tư duy số.
+
+    Đồng thời vận dụng các ứng dụng AI trong giảng dạy và soạn giáo án trong tương lai.
+  portfolio_goal: "Thể hiện các kỹ năng số đã học, lưu trữ sản phẩm cá nhân và thuận tiện truy cập, chia sẻ."
+  portfolio_pillars:
+    - { icon: "💡", title: "Thể hiện", text: "Các kỹ năng số đã học qua 6 chương" }
+    - { icon: "🗂️", title: "Lưu trữ", text: "Sản phẩm cá nhân ở một nơi gọn gàng" }
+    - { icon: "🔗", title: "Chia sẻ", text: "Truy cập nhanh, gửi link là xem được" }
+
+# ---------------------------------------------------------------------
+#  6 BÀI TẬP – tên bài & chương cố định theo đề, chỉ cần điền nội dung.
+#  Các loại khối sản phẩm (product.blocks) có sẵn:
+#    tree, table, examples, queries, prompts, scores, kanban, roles,
+#    flow, showcase, split, principles, scenarios, refs, note
+#  Xem cách viết từng loại trong file mẫu của Quỳnh.
+# ---------------------------------------------------------------------
+projects:
+  - id: 1
+    section: "1.4"
+    title: "Thao tác cơ bản với tệp tin và thư mục"
+    chapter: "Chương 1 – Máy tính và các thiết bị ngoại vi"
+    objective: "…"
+    process:
+      - "Bước 1: …"
+      - "Khó khăn: … – giải quyết bằng …"
+    tool: "…"
+    ai_use: "Không sử dụng AI"
+    product:
+      intro: "Yêu cầu: trình bày cấu trúc thư mục tối ưu và quy tắc đặt tên tệp đã thiết lập, kèm ảnh chụp minh họa."
+      blocks: []
+      gallery: []
+
+  - id: 2
+    section: "2.4"
+    title: "Tìm kiếm và đánh giá thông tin học thuật"
+    chapter: "Chương 2 – Khai thác dữ liệu và thông tin"
+    # Nguồn: báo cáo nhóm "NHÓM 4 – TC5" (Google Docs). Trang này là bản tóm tắt; bản gốc ở cuối trang.
+    objective: "Làm việc theo nhóm (Nhóm 4 – TC5) để tìm và chọn 3 tài liệu học thuật trong nước về chủ đề “Ứng dụng và ảnh hưởng của trí tuệ nhân tạo trong giáo dục và đào tạo”, dùng AI hỗ trợ tóm tắt và phân tích, rồi tự đối chiếu lại để đánh giá độ chính xác và tính hữu ích của AI. Kỹ năng được rèn luyện: chọn nguồn tin học thuật đáng tin cậy, đánh giá điểm mạnh và điểm yếu của từng nguồn, tổng hợp nhiều nguồn thành một bức tranh chung và đọc kết quả của AI một cách phản biện. Trong nhóm, mình phụ trách tóm tắt và phân tích tài liệu."
+    process:
+      - "Bước 1: Cả nhóm chốt chủ đề “Ứng dụng và ảnh hưởng của AI trong giáo dục và đào tạo”; bạn Trần Quốc Hưng tìm và đề xuất 3 tài liệu từ 3 tạp chí khoa học trong nước: Tạp chí Khoa học và Công nghệ – ĐH Đà Nẵng, Tạp chí Khoa học Pháp lý Việt Nam và Tạp chí Giáo dục."
+      - "Bước 2: Mình dùng Gemini để tóm tắt nội dung chính và phân tích điểm mạnh, điểm yếu của từng tài liệu, sau đó biên tập lại thành bảng đánh giá nguồn tin."
+      - "Bước 3: Tổng hợp thông tin từ 3 tài liệu thành một bức tranh chung và đề xuất 3 hướng nghiên cứu tiếp theo cho người mới bắt đầu."
+      - "Bước 4: So sánh kết quả tóm tắt, phân tích của AI với hiểu biết của nhóm về tài liệu (bạn Vũ Trung Kiên phụ trách)."
+      - "Bước 5: Đánh giá công cụ AI về độ chính xác và tính hữu ích (bạn Đặng Thanh Hương), rồi bạn Phạm Thanh Huyền tổng hợp thành báo cáo chung trên Google Docs."
+      - "AI: Gemini (bản Flash-Lite) được dùng để tóm tắt, phân tích điểm mạnh/điểm yếu, tổng hợp và gợi ý hướng nghiên cứu. Phần so sánh, đánh giá và kết luận do nhóm tự thực hiện."
+      - "Khó khăn: Gemini không mở trực tiếp được liên kết của Tài liệu 1 nên bản tóm tắt chỉ mang tính khái quát, chưa bám vào nội dung bài – nhóm ghi chú rõ hạn chế này trong báo cáo và rút ra nguyên tắc phải đối chiếu với văn bản gốc."
+      - "Khó khăn: Ở lượt đầu, AI hiểu sai yêu cầu đề bài nên kết quả trình bày mạch lạc nhưng lạc hướng – nhóm phát hiện kịp thời và điều chỉnh lại câu lệnh cho rõ ràng, cụ thể hơn."
+      - "Khó khăn: Tài liệu 3 đăng trên trang có nhiều nội dung nhiễu (menu, quảng cáo, bài liên quan) dễ khiến AI bỏ sót chi tiết – nhóm kiểm tra lại phần bài viết chính trước khi dùng kết quả."
+    tool: "Gemini (Flash-Lite), Google Docs, website các tạp chí khoa học"
+    ai_use: "Gemini – hỗ trợ tóm tắt, phân tích và gợi ý hướng nghiên cứu; nhóm tự so sánh, đánh giá và kết luận"
+    product:
+      intro: "Kết quả tìm kiếm là 3 tài liệu học thuật từ 3 tạp chí khoa học trong nước, kèm bảng đánh giá nguồn tin, phần tổng hợp và đánh giá công cụ AI. Đây là bản tóm tắt của báo cáo nhóm; bản đầy đủ ở cuối trang."
+      blocks:
+        - type: refs
+          title: "Ba tài liệu nhóm đã chọn"
+          items:
+            - t: "Tài liệu 1. Trần Tùng Ngọc, Nguyễn Thị Thu Thủy, Nguyễn Minh Tâm (2025). Nghiên cứu mô hình ứng dụng trí tuệ nhân tạo (AI) ChatGPT nhằm cải thiện kĩ năng viết cho sinh viên ngành tiếng Hàn. Tạp chí Khoa học và Công nghệ – Đại học Đà Nẵng."
+              url: "https://jst-ud.vn/jst-ud/article/view/9661"
+              link: "Xem bài báo"
+            - t: "Tài liệu 2. Trần Việt Dũng (2024). Bàn về phát triển quy phạm đạo đức trong tiến trình xây dựng pháp luật về trí tuệ nhân tạo. Tạp chí Khoa học Pháp lý Việt Nam – Trường ĐH Luật TP.HCM."
+              url: "https://khoahocphaplyvietnam.edu.vn/khplvn/article/view/115"
+              link: "Xem bài báo"
+            - t: "Tài liệu 3. Tạp chí Giáo dục (30/04/2025). Ứng dụng trí tuệ nhân tạo tạo sinh trong giáo dục đại học: Cơ hội, thách thức và hướng tiếp cận chính sách."
+              url: "https://tapchigiaoduc.edu.vn/article/89740/225/ung-dung-tri-tue-nhan-tao-tao-sinh-trong-giao-duc-dai-hoc-co-hoi-thach-thuc-va-huong-tiep-can-chinh-sach/"
+              link: "Xem bài viết"
+
+        - type: table
+          title: "Bảng đánh giá nguồn tin"
+          headers: ["Tài liệu", "Nguồn và góc tiếp cận", "Điểm mạnh", "Điểm yếu"]
+          rows:
+            - ["1. ChatGPT cải thiện kĩ năng viết", "Tạp chí KH&CN – ĐH Đà Nẵng (2025); kỹ thuật, ứng dụng thực tế", "Tính thực tiễn cao, giải quyết bài toán cụ thể, có mô hình và số liệu thử nghiệm rõ ràng", "Nặng tính kỹ thuật, khó đọc và khô khan với người mới tìm hiểu về AI"]
+            - ["2. Quy phạm đạo đức và pháp luật về AI", "Tạp chí Khoa học Pháp lý Việt Nam (2024); pháp lý và đạo đức", "Đặt ra vấn đề cốt lõi về trách nhiệm của con người; góc nhìn rộng, dự báo tốt rủi ro xã hội của AI", "Ít đi sâu vào giải pháp kỹ thuật; thiên về lý luận pháp luật nên khá trừu tượng"]
+            - ["3. AI tạo sinh trong giáo dục đại học", "Tạp chí Giáo dục (2025); giáo dục và AI tạo sinh", "Gắn trực tiếp với đời sống học tập hằng ngày của sinh viên, phân tích đa chiều", "Phạm vi chủ yếu trong giáo dục đại học, chưa mở rộng sang các lĩnh vực khác"]
+
+        - type: points
+          title: "Tóm tắt nội dung chính"
+          intro: "Bản tóm tắt do Gemini hỗ trợ, mình biên tập lại và ghi rõ chỗ AI chưa đáng tin."
+          items:
+            - t: "Tài liệu 1"
+              d: "Gemini không mở được toàn văn nên chỉ đưa ra nhận định chung về các nghiên cứu kỹ thuật, ứng dụng AI. Phần này cần đọc trực tiếp bài báo gốc để kiểm chứng."
+            - t: "Tài liệu 2"
+              d: "Phân tích thách thức đạo đức và pháp lý khi AI ngày càng tự chủ: lỗi hệ thống tự lái gây tai nạn, thiên vị thuật toán, vi phạm quyền riêng tư, giả mạo thông tin. Tác giả đề xuất xây dựng “luật mềm” (bộ nguyên tắc, quy tắc đạo đức) làm nền tảng trước khi ban hành khung pháp lý cứng."
+            - t: "Tài liệu 3"
+              d: "Đánh giá tác động của AI tạo sinh (ChatGPT, Gemini) trong đại học. Cơ hội: sinh viên học chủ động hơn, giảng viên được hỗ trợ soạn bài và giảm tải chấm điểm. Thách thức: gian lận học thuật, thiếu công bằng trong đánh giá, giảm tương tác giữa người với người. Giải pháp: nhà trường cần chính sách rõ ràng về ranh giới giữa sử dụng hợp lý và lạm dụng AI."
+
+        - type: points
+          title: "Tổng hợp: bức tranh chung"
+          items:
+            - t: "AI là con dao hai lưỡi"
+              d: "AI giúp tăng hiệu suất, tự động hóa và hỗ trợ học tập, nghiên cứu (Tài liệu 1, 3), nhưng cũng kéo theo rủi ro về sai sót thuật toán, thiên vị và mất kiểm soát đạo đức (Tài liệu 2)."
+            - t: "Khoa học phải đi đôi với đạo đức và chính sách"
+              d: "Công nghệ phát triển nhanh hơn luật pháp, vì vậy cần chuẩn mực đạo đức và quy định sử dụng (trong trường học, doanh nghiệp) để AI luôn phục vụ con người (Tài liệu 2, 3)."
+
+        - type: principles
+          title: "Đề xuất hướng nghiên cứu tiếp theo"
+          items:
+            - t: "Học thuật"
+              d: "Khảo sát thực trạng sinh viên dùng AI tạo sinh để làm bài tập và đề xuất bộ quy tắc “sử dụng AI có trách nhiệm” cho trường mình."
+            - t: "Kỹ thuật kết hợp xã hội"
+              d: "Tìm cách phát hiện và giảm thiểu thiên vị thuật toán (algorithmic bias) trong các ứng dụng AI phổ biến."
+            - t: "Pháp lý cơ bản"
+              d: "Tìm hiểu luật Việt Nam quy định thế nào về trách nhiệm bồi thường khi sản phẩm công nghệ (xe tự lái, phần mềm tự động) gây sự cố."
+
+        - type: points
+          title: "So sánh kết quả của AI với hiểu biết của nhóm"
+          intro: "Cả ba tài liệu đều nhìn AI một cách tỉnh táo: không phải “thiên thạch” hủy diệt cũng không phải “đũa thần” vạn năng. Điểm khác nằm ở phạm vi tiếp cận:"
+          items:
+            - t: "Tài liệu 1"
+              d: "Nhìn từ bên trong “hộp đen” kỹ thuật: làm sao để hệ thống chính xác và hiệu quả hơn."
+            - t: "Tài liệu 2"
+              d: "Nhìn ở tầm vĩ mô: khi AI gây sự cố thì trách nhiệm thuộc về ai, và “luật mềm” làm lớp đệm trước khi có luật cứng."
+            - t: "Tài liệu 3"
+              d: "Nhìn ở quan hệ giảng viên – sinh viên – AI; đáng chú ý là chỉ ra rủi ro tâm lý: lạm dụng AI làm giảm kết nối giữa người với người."
+
+        - type: points
+          title: "Đánh giá công cụ AI"
+          items:
+            - t: "Độ chính xác"
+              d: "Tương đối tốt khi AI đọc được nguồn, nhưng phụ thuộc vào chất lượng và định dạng của nguồn: không mở được Tài liệu 1, dễ bỏ sót chi tiết ở trang nhiều nội dung nhiễu như Tài liệu 3."
+            - t: "Tính hữu ích"
+              d: "Rút ngắn đáng kể thời gian thu thập, tổng hợp và sắp xếp thông tin theo đề mục. Tuy vậy, AI chỉ hữu ích khi người dùng chủ động kiểm soát; ở lượt đầu AI đã hiểu sai đề bài."
+
+        - type: principles
+          title: "Ba nguyên tắc nhóm rút ra khi dùng AI để nghiên cứu"
+          items:
+            - t: "Đặt câu lệnh rõ ràng, cụ thể ngay từ đầu"
+              d: "Để AI không hiểu sai ý định của người dùng."
+            - t: "Luôn đối chiếu kết quả với văn bản gốc"
+              d: "Đặc biệt với những nguồn AI không truy cập được hoặc trang có nhiều nội dung nhiễu."
+            - t: "Người nghiên cứu giữ quyền quyết định cuối cùng"
+              d: "AI là công cụ hỗ trợ, không thay thế tư duy phản biện và thẩm định học thuật."
+
+        - type: roles
+          title: "Phân công trong nhóm"
+          items:
+            - { icon: "🔎", who: "Trần Quốc Hưng", task: "Tìm chủ đề và tài liệu" }
+            - { icon: "📝", who: "Nguyễn Mai Hương (mình)", task: "Tóm tắt, phân tích tài liệu" }
+            - { icon: "⚖️", who: "Vũ Trung Kiên", task: "So sánh kết quả AI với hiểu biết của nhóm" }
+            - { icon: "✅", who: "Đặng Thanh Hương", task: "Đánh giá độ chính xác và tính hữu ích của AI" }
+            - { icon: "📚", who: "Phạm Thanh Huyền", task: "Tổng hợp báo cáo" }
+      gallery:
+        - file: "images/bai2_gemini_tom_tat.png"
+          caption: "Quá trình tương tác với Gemini (Flash-Lite) khi tóm tắt và phân tích 3 tài liệu"
+      links:
+        - label: "Bản gốc đầy đủ: báo cáo “NHÓM 4 – TC5” trên Google Docs"
+          url: "https://docs.google.com/document/d/1g6DWam52Ag4S0JQcKedb4B7aUvgUIPlVEMGH8ecgPXc/edit?usp=sharing"
+
+  - id: 3
+    section: "3.4"
+    title: "Viết Prompt hiệu quả cho các tác vụ học tập"
+    chapter: "Chương 3 – Tổng quan về trí tuệ nhân tạo"
+    objective: "Phát triển kỹ năng viết prompt hiệu quả để tận dụng mô hình ngôn ngữ lớn trong học tập: chọn 3 tác vụ học tập phổ biến, viết 3 phiên bản prompt cho mỗi tác vụ (cơ bản, cải tiến, nâng cao), thử nghiệm với ChatGPT, so sánh kết quả, phân tích vì sao có prompt hiệu quả hơn và tổng hợp nguyên tắc viết prompt. Nội dung các tác vụ được chọn gắn với ngành Sư phạm Âm nhạc."
+    process:
+      - "Bước 1: Chọn 3 tác vụ và phân tích mục tiêu, thách thức của từng tác vụ: tóm tắt bài viết “Ứng dụng trí tuệ nhân tạo tạo sinh trong giáo dục đại học” (Tạp chí Giáo dục, cũng là Tài liệu 3 ở Bài 2); giải thích khái niệm vòng quãng năm; tạo bộ câu hỏi ôn tập về hợp âm ba."
+      - "Bước 2: Viết 3 phiên bản prompt cho mỗi tác vụ, tổng cộng 9 prompt. Bản nâng cao dùng đóng vai (role prompting), chia bước suy luận (chain-of-thought), ví dụ mẫu (few-shot) và khuôn đầu ra."
+      - "Bước 3: Chạy 9 prompt trên ChatGPT bản miễn phí, không đăng nhập (mô hình cơ bản), mỗi prompt một cuộc trò chuyện mới để kết quả không ảnh hưởng nhau; chụp màn hình từng kết quả."
+      - "Bước 4: Đối chiếu từng câu trả lời với bài gốc và kiến thức nhạc lý, ghi lại chỗ đúng, chỗ sai; chấm điểm theo các tiêu chí."
+      - "Bước 5: Rút ra các nguyên tắc viết prompt, mỗi nguyên tắc kèm ví dụ từ chính kết quả thử nghiệm."
+      - "Khó khăn: Với prompt cơ bản của tác vụ 3, lần chạy đầu ChatGPT trả về dạng trắc nghiệm tương tác nhưng không hiện câu hỏi; chạy lại thì hiện từng câu một, không xem được cả bộ và đáp án – các phiên bản sau thêm yêu cầu “trình bày dạng văn bản để in ra giấy”."
+      - "Khó khăn: ChatGPT không đăng nhập không chắc đọc được đường link bài báo – dán cùng một toàn văn bài viết vào cả 3 phiên bản prompt của tác vụ 1 để so sánh công bằng."
+    tool: "ChatGPT (bản miễn phí, không đăng nhập)"
+    product:
+      intro: "Bảng so sánh 3 phiên bản prompt cho từng tác vụ, kèm trích đoạn kết quả, ảnh chụp màn hình và phân tích. Prompt được ghi nguyên văn; riêng tác vụ 1, phần toàn văn bài viết dán kèm được thay bằng [toàn văn bài viết] cho gọn."
+      blocks:
+        - type: prompt_lab
+          title: "So sánh 3 phiên bản prompt"
+          items:
+            - task: "Tóm tắt một tài liệu học thuật"
+              analysis: "Mục tiêu: nắm nhanh luận điểm của bài viết khoảng 900 chữ để dùng làm tài liệu tham khảo. Thách thức: bài có nhiều nhận định kiểu “một nghiên cứu đã chỉ ra” nhưng không ghi nguồn; bản tóm tắt dễ chép lại các nhận định đó như sự thật đã được chứng minh."
+              versions:
+                - level: "Cơ bản"
+                  prompt: "Tóm tắt bài này: [toàn văn bài viết]"
+                  output: "Trả lời gần 500 chữ, chia 4 mục Cơ hội – Thách thức – Định hướng chính sách – Kết luận, thêm một đoạn “Thông điệp chính”. Nội dung đúng với bài nhưng dài, gần như kể lại toàn bài."
+                  shot: "images/bai3_tv1_coban.jpg"
+                - level: "Cải tiến"
+                  techniques: ["Đối tượng", "Giới hạn độ dài", "Khung 3 phần"]
+                  prompt: "Tóm tắt bài viết dưới đây cho sinh viên năm nhất ngành sư phạm. Yêu cầu: độ dài tối đa 150 chữ; chia thành 3 phần có tiêu đề Cơ hội, Thách thức, Đề xuất chính sách; mỗi phần 2–3 gạch đầu dòng ngắn; chỉ dùng thông tin có trong bài, không thêm ý ngoài. Bài viết: [toàn văn bài viết]"
+                  output: "Đúng 3 phần, 9 gạch đầu dòng, khoảng 150 chữ (sát giới hạn). Ví dụ: “AI có thể đánh giá thiếu công bằng, chưa nhận diện tốt sự sáng tạo và tư duy phản biện.” Gọn, đúng trọng tâm, không thêm ý ngoài bài."
+                  shot: "images/bai3_tv1_caitien.jpg"
+                - level: "Nâng cao"
+                  techniques: ["Role prompting", "Chain-of-thought", "Few-shot", "Khuôn đầu ra"]
+                  prompt: "Bạn là trợ giảng môn Phương pháp nghiên cứu khoa học giáo dục… Hãy làm lần lượt từng bước: (1) xác định luận điểm chính trong 1 câu; (2) liệt kê cơ hội và thách thức, chỉ dùng thông tin trong bài; (3) chỉ ra những chỗ bài viết nêu “một nghiên cứu đã chỉ ra” nhưng không ghi rõ nguồn; (4) rút ra 1 gợi ý cho sinh viên sư phạm âm nhạc, ghi rõ là suy luận. Trình bày theo khuôn 5 dòng, không quá 200 chữ, kèm một dòng ví dụ lấy từ bài khác. Bài viết: [toàn văn bài viết]"
+                  output: "“Lưu ý khi đọc: Bài viết có 3 chỗ nêu ‘một nghiên cứu đã chỉ ra’ nhưng không ghi nguồn… Ngoài ra, cụm ‘các nghiên cứu cho thấy’ cũng không dẫn nguồn cụ thể.” Đối chiếu bài gốc: đúng cả 4 chỗ. Phần gợi ý được ghi rõ là suy luận."
+                  shot: "images/bai3_tv1_nangcao.jpg"
+              insight: "Bản cơ bản không có giới hạn nên AI viết gần 500 chữ, gần như kể lại toàn bài. Bản cải tiến thêm đối tượng, độ dài và khung 3 phần nên câu trả lời gọn còn khoảng 150 chữ. Bản nâng cao giao cho AI một việc đọc cụ thể ở bước 3 (tìm nhận định không có nguồn), nên AI phát hiện đúng 4 chỗ mà hai bản kia bỏ qua. Đây là điểm quan trọng nhất khi đọc tài liệu học thuật. Khác biệt đến từ yêu cầu hành động cụ thể, không phải từ việc prompt dài hơn."
+
+            - task: "Giải thích một khái niệm phức tạp: vòng quãng năm"
+              analysis: "Mục tiêu: hiểu vòng quãng năm được tạo ra như thế nào chứ không chỉ học thuộc sơ đồ. Thách thức: khái niệm trừu tượng, nhiều thuật ngữ (hóa biểu, giọng song song), rất dễ sai thứ tự dấu hóa; người mới cần được dẫn dắt từng bước."
+              versions:
+                - level: "Cơ bản"
+                  prompt: "Vòng quãng năm là gì?"
+                  output: "AI mở đầu: “Vòng quãng năm có thể là cách gọi nhầm hoặc cách viết khác của vòng quãng 5”, định nghĩa quãng 5 là “khoảng cách giữa hai nốt nhạc cách nhau 5 bậc”, liệt kê 4 công dụng rồi hỏi lại người dùng đang học nhạc lý, guitar hay piano. Chưa giải thích được vòng hình thành ra sao."
+                  shot: "images/bai3_tv2_coban.jpg"
+                - level: "Cải tiến"
+                  techniques: ["Đối tượng", "Khung 3 phần", "Độ dài", "Quy ước tên nốt"]
+                  prompt: "Giải thích khái niệm vòng quãng năm (circle of fifths) trong nhạc lý cho sinh viên năm nhất ngành Sư phạm Âm nhạc mới học nhạc lý cơ bản. Trình bày gồm: 1. Định nghĩa ngắn gọn. 2. Cách vòng được tạo ra. 3. Hai ứng dụng thực tế khi học đàn. Độ dài khoảng 250 chữ, có tiêu đề nhỏ cho từng phần, dùng tên nốt tiếng Việt kèm tên chữ cái (Đô – C, Rê – D…)."
+                  output: "Đúng 3 phần, đúng quy ước tên nốt, có 2 ứng dụng (ghi nhớ hóa biểu; nhận biết hợp âm C – F – G). Nhưng chiều dấu thăng dừng ở Si (B), thiếu Fa♯ và Đô♯, và không giải thích vì sao mỗi bước lại thêm một dấu thăng."
+                  shot: "images/bai3_tv2_caitien.jpg"
+                - level: "Nâng cao"
+                  techniques: ["Role prompting", "Chain-of-thought", "Few-shot", "Tự kiểm tra"]
+                  prompt: "Bạn là giảng viên nhạc lý nhiều năm dạy sinh viên mới bắt đầu. Hãy giải thích vòng quãng năm cho một sinh viên chỉ mới biết đọc nốt và biết quãng 5 đúng. Dẫn dắt từng bước, giải thích lý do ở mỗi bước: đi lên quãng 5 đến giọng có 7 dấu thăng; đi xuống đến giọng có 7 dấu giáng; quan hệ giọng trưởng – giọng thứ song song; 2 ứng dụng khi học piano hoặc guitar; 3 câu hỏi tự kiểm tra. Mở đầu bằng một hình ảnh so sánh theo kiểu ví dụ “Quãng tám giống như hai người cùng tên ở hai tầng nhà khác nhau” (đừng dùng lại). Trước khi trả lời, hãy tự kiểm tra lại thứ tự dấu thăng, dấu giáng."
+                  output: "Mở đầu bằng hình ảnh “chiếc đồng hồ âm nhạc”; đủ 7 dấu thăng và 7 dấu giáng đúng thứ tự, nêu quy luật “dấu thăng mới luôn nằm ở bậc VII của giọng mới”, có bảng giọng song song và 3 câu hỏi tự kiểm tra. Có một lỗi: khi giải thích Si giáng, AI viết “khoảng cách từ Si đến Đô cũng là một cung” – thực tế Si – Đô là nửa cung."
+                  shot: "images/bai3_tv2_nangcao.jpg"
+              insight: "Bản cơ bản thiếu ngữ cảnh nên AI còn không chắc thuật ngữ là gì và phải hỏi lại. Bản cải tiến có khung nên gọn gàng, nhưng chỉ yêu cầu “cách vòng được tạo ra” chung chung nên AI dừng giữa chừng. Bản nâng cao nói rõ người học biết gì, cần đi đến đâu (7 dấu) và phải giải thích lý do từng bước, nên AI nêu được quy luật thay vì chỉ liệt kê. Tuy vậy vẫn còn một lỗi nhạc lý dù prompt đã yêu cầu tự kiểm tra: câu lệnh tốt giảm lỗi chứ không loại bỏ được lỗi."
+
+            - task: "Tạo bộ câu hỏi ôn tập: hợp âm ba"
+              analysis: "Mục tiêu: có bộ câu hỏi để tự ôn và có thể dùng khi đi thực tập dạy học. Thách thức: câu hỏi phải đúng tuyệt đối về nhạc lý, phương án nhiễu phải hợp lý, cần phân mức độ và có đáp án để kiểm tra."
+              versions:
+                - level: "Cơ bản"
+                  prompt: "Tạo câu hỏi ôn tập về hợp âm ba."
+                  output: "ChatGPT tự chọn dạng bài trắc nghiệm tương tác 10 câu. Lần chạy đầu không hiện câu hỏi nào (ảnh trên); chạy lại thì hiện từng câu một, câu 1: “Hợp âm ba là hợp âm được cấu tạo bởi bao nhiêu âm thanh khác nhau?”. Không xem được cả bộ, không in được, không có bảng đáp án."
+                  shot: "images/bai3_tv3_coban.jpg"
+                - level: "Cải tiến"
+                  techniques: ["Số lượng", "Đối tượng", "Định dạng in", "Bảng đáp án"]
+                  prompt: "Tạo 10 câu hỏi trắc nghiệm ôn tập chủ đề hợp âm ba (trưởng, thứ, tăng, giảm) cho sinh viên năm nhất ngành Sư phạm Âm nhạc. Yêu cầu: mỗi câu có 4 phương án A, B, C, D, chỉ một đáp án đúng; độ khó tăng dần từ câu 1 đến câu 10; trình bày dạng văn bản để in ra giấy, không dùng dạng trắc nghiệm tương tác; cuối bài có bảng đáp án."
+                  output: "Đề 10 câu có tiêu đề, hướng dẫn làm bài, bảng đáp án và bảng phân bố mức độ. Đối chiếu: cả 10 đáp án đều đúng, kể cả câu khó như Fa – La – Đô♯ là hợp âm ba tăng. Nhưng không có giải thích đáp án, người tự ôn sai sẽ không biết sai ở đâu."
+                  shot: "images/bai3_tv3_caitien.jpg"
+                - level: "Nâng cao"
+                  techniques: ["Role prompting", "Phân mức Bloom", "Few-shot", "Tự kiểm tra"]
+                  prompt: "Bạn là giảng viên nhạc lý, đang soạn đề ôn tập cho sinh viên năm nhất ngành Sư phạm Âm nhạc. Hãy tạo bộ 8 câu hỏi trắc nghiệm về hợp âm ba, chia theo 3 mức: Nhận biết 3 câu, Thông hiểu 3 câu, Vận dụng 2 câu. Mỗi câu viết đúng theo mẫu (kèm 1 câu mẫu có đáp án và giải thích). Không dùng lại câu mẫu; mỗi phương án nhiễu phải là một lỗi sai sinh viên hay mắc; trước khi ghi đáp án hãy tự đếm lại số cung, nửa cung; trình bày dạng văn bản để in; cuối bộ có bảng đáp án."
+                  output: "Đúng 8 câu theo 3 mức, mỗi câu có giải thích bằng số nửa cung, ví dụ: “Đô – Mi: 4 nửa cung; Mi – Sol thăng: 4 nửa cung. Hợp âm thứ hai là hợp âm ba tăng.” Có câu dựng hợp âm trên bậc IV giọng Sol trưởng. Đối chiếu: cả 8 đáp án đều đúng. Điểm yếu: 5/8 câu có đáp án B, người làm dễ đoán mò."
+                  shot: "images/bai3_tv3_nangcao.jpg"
+              insight: "Prompt cơ bản để AI tự quyết hình thức nên kết quả không dùng được cho mục đích in và ôn tập. Bản cải tiến chỉ thêm số lượng, định dạng và bảng đáp án là đã có một đề dùng được ngay. Bản nâng cao thêm vai trò, phân mức và một câu mẫu nên câu hỏi đồng đều về hình thức và có giải thích để tự học. Bài học rút ra: lần sau cần thêm một ràng buộc mà cả ba bản đều thiếu, “phân bố đáp án đúng đều giữa A, B, C, D”."
+
+        - type: table
+          title: "Bảng chấm điểm kết quả (thang 1–5)"
+          headers: ["Tác vụ", "Tiêu chí", "Cơ bản", "Cải tiến", "Nâng cao"]
+          rows:
+            - ["1. Tóm tắt", "Độ chính xác", "4", "5", "5"]
+            - ["1. Tóm tắt", "Cô đọng, đúng trọng tâm", "2", "5", "4"]
+            - ["1. Tóm tắt", "Đọc phản biện nguồn", "1", "1", "5"]
+            - ["2. Giải thích", "Độ chính xác", "3", "3", "4"]
+            - ["2. Giải thích", "Đầy đủ (đủ 7 dấu, có lý do)", "1", "2", "5"]
+            - ["2. Giải thích", "Phù hợp người mới học", "2", "3", "5"]
+            - ["3. Câu hỏi ôn tập", "Độ chính xác", "không đánh giá được", "5", "5"]
+            - ["3. Câu hỏi ôn tập", "Dùng được ngay (in, có đáp án)", "1", "4", "5"]
+            - ["3. Câu hỏi ôn tập", "Có giải thích để tự học", "1", "1", "5"]
+
+        - type: principles
+          title: "Nguyên tắc viết prompt rút ra từ thử nghiệm"
+          items:
+            - t: "Nói rõ ai đọc và họ đã biết gì"
+              d: "“Vòng quãng năm là gì?” khiến AI phải hỏi lại; thêm “sinh viên năm nhất chỉ biết đọc nốt và quãng 5 đúng” thì AI chọn đúng điểm xuất phát để giải thích."
+            - t: "Đặt giới hạn và khuôn cho đầu ra"
+              d: "Thêm “tối đa 150 chữ, 3 phần” làm bản tóm tắt giảm từ gần 500 xuống khoảng 150 chữ; thêm “dạng văn bản để in” giúp tránh dạng trắc nghiệm tương tác không dùng được."
+            - t: "Giao cho AI một thao tác tư duy cụ thể"
+              d: "Chain-of-thought hiệu quả khi mỗi bước là một việc rõ ràng: bước “chỉ ra chỗ không ghi nguồn” giúp phát hiện đúng 4 nhận định thiếu căn cứ trong bài báo."
+            - t: "Dùng ví dụ mẫu để định hình, không để mớm đáp án"
+              d: "Câu mẫu ở tác vụ 3 làm 8 câu hỏi đồng nhất và đều có giải thích; ví dụ ở tác vụ 1 lấy từ bài khác để AI học cách viết mà không chép nội dung."
+            - t: "Luôn kiểm tra lại, kể cả với prompt tốt"
+              d: "Bản nâng cao vẫn viết sai “Si – Đô là một cung” và đặt 5/8 đáp án là B. Yêu cầu “hãy tự kiểm tra” giảm lỗi nhưng người dùng vẫn phải đối chiếu kiến thức chuyên môn."
+            - t: "Prompt dài hơn không tự động tốt hơn"
+              d: "Điều tạo ra khác biệt là ràng buộc cụ thể (độ dài, định dạng, các bước, tiêu chí) chứ không phải số chữ của prompt."
+
+  - id: 4
+    section: "4.4"
+    title: "Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm"
+    chapter: "Chương 4 – Giao tiếp và hợp tác trong môi trường số"
+    # Nguồn: báo cáo nhóm "NHÓM 4- TC5 – BT2" (Google Docs). Trang này là bản tóm tắt; bản gốc ở cuối trang.
+    objective: "Cùng Nhóm 4 – TC5 tổ chức một cuộc họp trực tuyến để khởi động đề tài “Nghiên cứu ứng dụng và ảnh hưởng của trí tuệ nhân tạo trong giáo dục và đào tạo”: lập kế hoạch họp, họp qua Zoom, ghi biên bản, tự đánh giá và rút bài học. Kỹ năng được rèn luyện: lập kế hoạch và phân công việc nhóm, giao tiếp và phối hợp trên công cụ trực tuyến, ghi biên bản cuộc họp, phản biện và lắng nghe ý kiến đồng đội. Trong nhóm, mình làm thư ký ghi biên bản và phụ trách phần “Ứng dụng AI trong giảng dạy”."
+    process:
+      - "Bước 1: Bạn Đặng Thanh Hương lên kịch bản và kế hoạch họp: mục đích, thời lượng khoảng 40 phút, mỗi phần trình bày 5 phút và 20 phút thảo luận chung."
+      - "Bước 2: Cả nhóm họp trực tuyến qua Zoom từ 19:00 đến 19:40 ngày 07/09/2026, có ghi hình; trưởng nhóm Phạm Thanh Huyền điều phối, mỗi phần có 2–3 phút hỏi đáp."
+      - "Bước 3: Mình làm thư ký, ghi biên bản diễn biến 5 phần trình bày và kết quả phân công, rồi cùng trưởng nhóm xác nhận biên bản."
+      - "Bước 4: Mình trình bày phần “Ứng dụng AI trong giảng dạy” và góp ý đưa thêm ví dụ thực tế như Khan Academy, Duolingo để bài sinh động hơn."
+      - "Bước 5: Từng thành viên đánh giá cuộc họp và phần việc của mình; bạn Trần Quốc Hưng và Vũ Trung Kiên tổng hợp đánh giá, bài học kinh nghiệm; bạn Phạm Thanh Huyền tổng hợp thành báo cáo chung trên Google Docs."
+      - "Khó khăn: Họp trực tuyến dễ lan man và quá giờ – nhóm chia chương trình họp theo từng phần có thời lượng cụ thể nên cuộc họp kết thúc đúng 40 phút dự kiến."
+      - "Khó khăn: Nội dung các phần dễ chồng chéo – nhóm tách riêng ứng dụng AI trong giảng dạy với quản lý, và thống nhất phần trước làm tiền đề cho phần sau (dữ liệu LMS ở Phần 3 dẫn sang rủi ro dữ liệu ở Phần 4, thách thức ở Phần 4 dẫn sang giải pháp ở Phần 5)."
+    tool: "Zoom (họp trực tuyến, ghi hình), Google Docs (kế hoạch, biên bản, báo cáo chung)"
+    ai_use: "Báo cáo nhóm không ghi nhận việc sử dụng AI"
+    product:
+      intro: "Minh chứng phối hợp trực tuyến của nhóm gồm kế hoạch họp, biên bản do mình ghi, đánh giá của các thành viên, bài học kinh nghiệm và ảnh chụp cuộc họp Zoom. Đây là bản tóm tắt của báo cáo nhóm; bản đầy đủ ở cuối trang."
+      blocks:
+        - type: points
+          title: "Thông tin cuộc họp"
+          items:
+            - t: "Thời gian"
+              d: "19:00 – 19:40, ngày 07/09/2026"
+            - t: "Hình thức"
+              d: "Họp trực tuyến qua Zoom, có ghi hình"
+            - t: "Thành phần"
+              d: "Phạm Thanh Huyền (trưởng nhóm), Nguyễn Mai Hương (thư ký), Vũ Trung Kiên, Đặng Thanh Hương, Trần Quốc Hưng"
+            - t: "Mục đích"
+              d: "Thống nhất chủ đề và phạm vi nghiên cứu, góp ý cho từng nội dung, phân công nhiệm vụ, thống nhất tiến độ và thời hạn hoàn thành"
+
+        - type: table
+          title: "Chương trình họp"
+          headers: ["Thời lượng", "Nội dung", "Phụ trách"]
+          rows:
+            - ["5 phút", "Điểm danh, giới thiệu mục tiêu và chủ đề", "Thanh Huyền"]
+            - ["5 phút", "Tổng quan đề tài, lý do chọn và cấu trúc báo cáo", "Thanh Huyền"]
+            - ["5 phút", "Ứng dụng AI trong giảng dạy", "Mai Hương"]
+            - ["5 phút", "Ứng dụng AI trong quản lý và đánh giá", "Trung Kiên"]
+            - ["5 phút", "Ảnh hưởng, lợi ích và thách thức của AI", "Thanh Hương"]
+            - ["5 phút", "Xu hướng tương lai và đề xuất giải pháp", "Quốc Hưng"]
+            - ["20 phút", "Thảo luận chung, chốt phân công và thời hạn", "Cả nhóm"]
+
+        - type: flow
+          title: "Cách nhóm phối hợp trực tuyến"
+          items:
+            - "Lên kế hoạch và chương trình họp"
+            - "Họp Zoom theo đúng chương trình"
+            - "Hỏi đáp 2–3 phút sau mỗi phần"
+            - "Thư ký ghi biên bản"
+            - "Chốt phân công và thời hạn"
+            - "Tổng hợp báo cáo chung trên Google Docs"
+
+        - type: roles
+          title: "Phân công sau cuộc họp (theo biên bản)"
+          items:
+            - { icon: "🧭", who: "Phạm Thanh Huyền", task: "Điều phối chung; viết mở đầu, kết luận; tổng hợp và biên tập báo cáo" }
+            - { icon: "📝", who: "Nguyễn Mai Hương (mình)", task: "Phần Ứng dụng AI trong giảng dạy; thư ký ghi biên bản" }
+            - { icon: "📊", who: "Vũ Trung Kiên", task: "Phần Ứng dụng AI trong quản lý và đánh giá" }
+            - { icon: "⚖️", who: "Đặng Thanh Hương", task: "Phần Ảnh hưởng tích cực và thách thức của AI trong giáo dục" }
+            - { icon: "🚀", who: "Trần Quốc Hưng", task: "Phần Xu hướng và giải pháp; thiết kế slide thuyết trình" }
+
+        - type: points
+          title: "Đánh giá của các thành viên"
+          intro: "Mỗi bạn tự nhận xét về cuộc họp và phần việc sắp làm (tóm lược)."
+          items:
+            - t: "Mai Hương (mình)"
+              d: "Phân công hợp lý vì tách riêng ứng dụng giảng dạy với quản lý nên bài không bị chồng chéo. Mình sẽ làm rõ sự chuyển dịch sang học tập cá nhân hóa, thêm ví dụ thực tế như Khan Academy, Duolingo, và nhấn mạnh AI chỉ hỗ trợ chứ không thay thế giáo viên."
+            - t: "Thanh Huyền"
+              d: "Cuộc họp đã chốt được câu hỏi nghiên cứu xuyên suốt và khung 5 phần, thống nhất dùng nguồn uy tín như UNESCO, WEF."
+            - t: "Trung Kiên"
+              d: "Phần 2 và Phần 3 nối tiếp nhau tốt; dữ liệu từ LMS ở phần quản lý sẽ làm tiền đề cho phần phân tích rủi ro dữ liệu."
+            - t: "Thanh Hương"
+              d: "Đã chốt 4 thách thức cốt lõi: bất bình đẳng, gian lận và suy giảm tư duy, sự phụ thuộc, bảo mật dữ liệu."
+            - t: "Quốc Hưng"
+              d: "Phần giải pháp sẽ trả lời trực tiếp 4 thách thức đó theo 4 trụ cột: pháp lý, đánh giá, năng lực số, hạ tầng."
+
+        - type: principles
+          title: "Bài học kinh nghiệm"
+          items:
+            - t: "Họp có mục tiêu, thời lượng và vai trò rõ ràng"
+              d: "Người dẫn dắt không làm thay ai, mà đặt đúng câu hỏi và khung chung để cả nhóm đi cùng một hướng."
+            - t: "Phần trước làm tiền đề cho phần sau"
+              d: "Làm việc nhóm là tiếp sức: mỗi người nhận phần hợp với thế mạnh và chuẩn bị nền cho người tiếp theo."
+            - t: "Phản biện văn minh, lắng nghe đồng đội"
+              d: "Vài phút hỏi đáp sau mỗi phần không làm chậm tiến độ mà giúp sản phẩm tốt hơn."
+            - t: "AI là công cụ, con người là chủ thể"
+              d: "Giá trị của sinh viên là đặt câu hỏi đúng, kiểm chứng thông tin và dùng công nghệ có trách nhiệm."
+      gallery:
+        - file: "images/bai4_hop_zoom.jpg"
+          caption: "Ảnh chụp màn hình cuộc họp Zoom của nhóm ngày 07/09/2026"
+      links:
+        - label: "Bản gốc đầy đủ: báo cáo “NHÓM 4- TC5 – BT2” trên Google Docs"
+          url: "https://docs.google.com/document/d/1dVHG_gSWFYIYYPIpkR6GbfEUH6cfLopRb90zZcG84dE/edit?usp=sharing"
+
+  - id: 5
+    section: "5.4"
+    title: "Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung"
+    chapter: "Chương 5 – Sáng tạo nội dung số"
+    # Nguồn: "BÀI TẬP NHÓM GIỮA KỲ NHÓM 4" (Google Docs). Trang này là bản tóm tắt; bản gốc ở cuối trang.
+    objective: "Bài tập nhóm giữa kỳ của Nhóm 4: viết kịch bản và sản xuất một video 5 phút với đề tài “Ứng dụng AI & Công nghệ số trong dạy và học Guitar”, giới thiệu 3 công cụ (GuitarTuna, Hợp Âm Chuẩn, ChatGPT/Gemini), phân tích hạn chế và cách khắc phục của từng công cụ. Kỹ năng được rèn luyện: xây dựng kịch bản nội dung số, dựng video và thiết kế đồ họa, tìm hiểu cách AI hỗ trợ việc dạy và học nhạc cụ, nhìn nhận công nghệ một cách phản biện. Trong video, mình cùng bạn Phạm Thanh Huyền phụ trách phần giới thiệu chủ đề."
+    process:
+      - "Bước 1: Nhóm chốt đề tài “Ứng dụng AI & Công nghệ số trong dạy và học Guitar” và chia video 5 phút thành 5 phần có thời lượng cụ thể."
+      - "Bước 2: Viết kịch bản phần mở đầu theo một tình huống thực tế: bạn Kiên gặp khó khăn khi học đàn guitar, bạn Hưng và bạn Thanh Hương giới thiệu cho Kiên các công cụ AI hỗ trợ; mình và bạn Huyền giới thiệu chủ đề."
+      - "Bước 3: Tìm hiểu và trình bày 3 công cụ theo cùng một khung: định nghĩa, nguyên lý hoạt động của AI và công nghệ, tính năng cốt lõi."
+      - "Bước 4: Lập bảng hạn chế và cách khắc phục của 3 công cụ, chốt thông điệp kết: công nghệ là trợ lý, không thay thế được người thầy."
+      - "Bước 5: Quay video, dựng hậu kỳ bằng CapCut và thiết kế đồ họa chú thích (lower-third), slide bằng Canva."
+      - "AI: ChatGPT/Gemini được dùng như trợ lý sư phạm để lập lộ trình học guitar cá nhân hóa (nội dung minh họa trong video); tính năng khử nhiễu (Noise Reduction) của CapCut dùng để làm trong tiếng đàn."
+      - "Khó khăn: Thu âm tiếng đàn guitar trực tiếp vào video dễ lẫn tạp âm phòng và tiếng ồn xung quanh – nhóm dùng tính năng khử nhiễu (Noise Reduction) của CapCut để làm trong tiếng đàn."
+      - "Khó khăn: Lúc đầu phần trình bày của 5 thành viên vượt quá 5 phút cho phép – nhóm rà soát kịch bản, cô đọng lời thoại và tập căn thời gian trước khi quay chính thức."
+    tool: "CapCut (dựng video, khử nhiễu), Canva (đồ họa, slide), GuitarTuna, Hợp Âm Chuẩn, ChatGPT/Gemini"
+    ai_use: "ChatGPT/Gemini – lập lộ trình học guitar cá nhân hóa (minh họa trong video); CapCut – khử nhiễu âm thanh"
+    product:
+      intro: "Sản phẩm là video nhóm dài 5 phút. Dưới đây là cấu trúc kịch bản và nội dung chính của video; bản kịch bản và báo cáo đầy đủ ở cuối trang."
+      blocks:
+        - type: showcase
+          title: "Ứng dụng AI & Công nghệ số trong Dạy và Học Guitar"
+          subtitle: "Video nhóm 5 phút, chia thành 5 phần"
+          steps:
+            - { icon: "🎬", t: "0:00 – 0:50 Mở đầu", d: "Giới thiệu thành viên; tình huống Kiên gặp khó khăn khi học đàn; giới thiệu chủ đề." }
+            - { icon: "🎸", t: "0:50 – 2:00 GuitarTuna", d: "Lên dây đàn chuẩn xác và luyện nhịp theo thời gian thực." }
+            - { icon: "🎼", t: "2:00 – 3:05 Hợp Âm Chuẩn", d: "Thư viện hợp âm bài hát Việt Nam và tự động dịch giọng." }
+            - { icon: "🤖", t: "3:05 – 4:20 AI soạn giáo án", d: "ChatGPT/Gemini làm trợ lý sư phạm; đánh giá hạn chế và cách khắc phục của 3 công cụ." }
+            - { icon: "💬", t: "4:20 – 5:00 Kết luận", d: "Thông điệp cốt lõi và cả nhóm chào kết." }
+
+        - type: points
+          title: "Ba công cụ được giới thiệu trong video"
+          items:
+            - t: "GuitarTuna"
+              d: "Ứng dụng lên dây đàn và hỗ trợ luyện tập. AI nhận diện âm thanh (Audio Recognition) kết hợp thuật toán phân tích cao độ (Pitch Detection), lọc tạp âm qua micro điện thoại để đo độ chuẩn của dây theo thời gian thực. Tính năng chính: tự nhận diện nốt/dây, báo màu xanh khi dây đạt chuẩn; máy đếm nhịp (Metronome) để luyện ngón."
+            - t: "Hợp Âm Chuẩn"
+              d: "Thư viện hợp âm số hóa cho nhạc Việt Nam. Tìm kiếm thông minh (xử lý ngôn ngữ tự nhiên – NLP) theo tên bài, ca sĩ hoặc một đoạn lời kể cả khi gõ sai; thuật toán chuyển tông (Transposition) đổi giọng mà giữ nguyên tính chất hòa âm. Tính năng chính: thư viện phân loại rõ, tự động dịch giọng theo tầm giọng, tự động cuộn trang khi đang đàn."
+            - t: "ChatGPT / Gemini"
+              d: "Mô hình ngôn ngữ lớn đóng vai trò trợ lý sư phạm: phân tích yêu cầu (prompt) để tổng hợp kiến thức nhạc lý, thiết kế bài tập luyện ngón và lập lộ trình học guitar cá nhân hóa theo độ tuổi, trình độ."
+
+        - type: table
+          title: "Hạn chế và cách khắc phục"
+          headers: ["Công cụ", "Hạn chế cốt lõi", "Cách khắc phục"]
+          rows:
+            - ["GuitarTuna", "Môi trường ồn hoặc micro điện thoại kém khiến AI nhiễu, nhận sai cao độ hoặc chập chờn.", "Lên dây ở nơi yên tĩnh, hoặc dùng thêm bộ lên dây kẹp đàn (clip-on tuner) nhận độ rung."]
+            - ["Hợp Âm Chuẩn", "Dữ liệu do người dùng đóng góp nên có bản sai nốt, sai hợp âm; dịch giọng tự động đôi khi tạo thế bấm quá khó.", "Giáo viên thẩm định bản nhạc trước khi giao cho học sinh và điều chỉnh thế bấm phù hợp với tay người học."]
+            - ["ChatGPT / Gemini", "Không đánh giá được thể trạng thực tế (ngón tay, lực bấm, cổ tay) nên dễ gợi ý bài tập gây đau tay, sai tư thế; thiếu cảm xúc sư phạm.", "Áp dụng mô hình con người kiểm duyệt (Human-in-the-Loop): AI chỉ là khung tham khảo, giáo viên trực tiếp kiểm tra và nắn tư thế cho học sinh."]
+
+        - type: note
+          text: "Thông điệp của video: công nghệ số và AI là những trợ lý đắc lực giúp việc dạy và học guitar trực quan, tiết kiệm thời gian hơn, nhưng không thể thay thế sự nắn chỉnh tỉ mỉ và cảm xúc mà người thầy âm nhạc truyền cho học trò."
+      links:
+        - label: "Bản gốc đầy đủ: “BÀI TẬP NHÓM GIỮA KỲ NHÓM 4” trên Google Docs"
+          url: "https://docs.google.com/document/d/10IseipNV7_x3kZ6V10kLViIfkkfd0Y9trUb0u7uiARM/edit?usp=sharing"
+
+  - id: 6
+    section: "6.4"
+    title: "Sử dụng AI có trách nhiệm trong học tập và nghiên cứu"
+    chapter: "Chương 6 – An toàn và liêm chính học thuật trong môi trường số"
+    objective: "…"
+    process:
+      - "Bước 1: …"
+    tool: "…"
+    ai_use: "…"
+    product:
+      intro: "Yêu cầu: trình bày bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm dựa trên các nghiên cứu đã thực hiện."
+      blocks: []
+      gallery: []
+
+# ⚠ Theo đề: phần cảm nhận, tự đánh giá phải do sinh viên TỰ VIẾT.
+conclusion:
+  experience: "…"
+  key_skills:
+    - "…"
+  highlight: "…"
+  challenge: "…"
+  future: "…"

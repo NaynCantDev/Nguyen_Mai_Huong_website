@@ -343,6 +343,8 @@ tbody tr:last-child td { border-bottom: 0; }
 .gallery figure { max-width: 100%; }
 .gallery figcaption { max-width: 46ch; }
 .gallery img { width: auto; max-width: 100%; max-height: 560px; border-radius: 8px; box-shadow: 0 0 0 1.5px var(--rule); transition: transform .4s var(--out); }
+.gallery.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px 18px; }
+.gallery.grid img { width: 100%; max-height: none; }
 .gallery a:hover img { transform: scale(1.02); }
 .gallery figcaption { margin-top: 6px; font-size: .9rem; color: var(--ink-2); }
 .video { margin-top: 28px; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: var(--ink); }

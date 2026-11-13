@@ -56,16 +56,66 @@ projects:
     section: "1.4"
     title: "Thao tác cơ bản với tệp tin và thư mục"
     chapter: "Chương 1 – Máy tính và các thiết bị ngoại vi"
-    objective: "…"
+    objective: "Thực hành các thao tác cơ bản với tệp tin và thư mục trên Windows bằng File Explorer: tạo thư mục và thư mục con, tạo tệp, đổi tên, sao chép, di chuyển và xóa tệp; đồng thời đặt tên tệp, thư mục theo một quy tắc thống nhất. Kỹ năng được rèn luyện: tổ chức dữ liệu cá nhân gọn gàng, dễ tìm, thao tác chính xác trên hệ điều hành."
     process:
-      - "Bước 1: …"
-      - "Khó khăn: … – giải quyết bằng …"
-    tool: "…"
+      - "Bước 1: Mở File Explorer, vào Desktop và tạo thư mục thực hành ThucHanh_NguyenMaiHuong."
+      - "Bước 2: Trong thư mục thực hành, tạo tệp văn bản GhiChu.txt và thư mục con TaiLieu."
+      - "Bước 3: Đổi tên GhiChu.txt thành GhiChuQuanTrong.txt bằng lệnh Rename trong menu chuột phải."
+      - "Bước 4: Sao chép GhiChuQuanTrong.txt vào thư mục TaiLieu (Copy – Paste), tệp gốc vẫn giữ nguyên ở thư mục ngoài."
+      - "Bước 5: Tạo tệp DiChuyen.txt rồi di chuyển vào TaiLieu bằng Cut – Paste, tệp không còn ở vị trí cũ."
+      - "Bước 6: Xóa lần lượt GhiChuQuanTrong.txt và DiChuyen.txt trong TaiLieu bằng lệnh Delete, kiểm tra thư mục trống."
+    tool: "File Explorer (Windows 11)"
     ai_use: "Không sử dụng AI"
     product:
-      intro: "Yêu cầu: trình bày cấu trúc thư mục tối ưu và quy tắc đặt tên tệp đã thiết lập, kèm ảnh chụp minh họa."
-      blocks: []
-      gallery: []
+      intro: "Cấu trúc thư mục thực hành, quy tắc đặt tên đã áp dụng và ảnh chụp từng thao tác."
+      blocks:
+        - type: tree
+          title: "ThucHanh_NguyenMaiHuong (trên Desktop)"
+          items:
+            - name: "TaiLieu"
+              children: ["DiChuyen.txt (di chuyển vào, sau đó xóa)", "GhiChuQuanTrong.txt (bản sao, sau đó xóa)"]
+            - name: "GhiChuQuanTrong.txt (đổi tên từ GhiChu.txt)"
+        - type: table
+          title: "Quy tắc đặt tên đã áp dụng"
+          headers: ["Quy tắc", "Ví dụ trong bài"]
+          rows:
+            - ["Viết tiếng Việt không dấu, không khoảng trắng", "GhiChuQuanTrong.txt, DiChuyen.txt"]
+            - ["Viết hoa chữ cái đầu mỗi từ để dễ đọc", "TaiLieu, GhiChuQuanTrong"]
+            - ["Dùng dấu gạch dưới để tách nội dung và tên người", "ThucHanh_NguyenMaiHuong"]
+            - ["Tên nói rõ nội dung của tệp, thư mục", "TaiLieu (chứa tài liệu), GhiChuQuanTrong (ghi chú quan trọng)"]
+        - type: table
+          title: "Phân biệt sao chép và di chuyển"
+          headers: ["Thao tác", "Lệnh", "Kết quả"]
+          rows:
+            - ["Sao chép", "Copy – Paste", "Tệp có ở cả vị trí cũ và vị trí mới (GhiChuQuanTrong.txt)"]
+            - ["Di chuyển", "Cut – Paste", "Tệp chỉ còn ở vị trí mới (DiChuyen.txt)"]
+      gallery:
+        - file: "images/bai1_01.png"
+          caption: "1. Mở File Explorer (trang Home) để bắt đầu thực hành"
+        - file: "images/bai1_02.png"
+          caption: "2. Tạo thư mục ThucHanh_NguyenMaiHuong trên Desktop"
+        - file: "images/bai1_03.png"
+          caption: "3. Tạo tệp văn bản GhiChu.txt trong thư mục thực hành"
+        - file: "images/bai1_04.png"
+          caption: "4. Tạo thư mục con TaiLieu"
+        - file: "images/bai1_05.png"
+          caption: "5. Nhấp chuột phải vào GhiChu.txt, chọn Rename để đổi tên"
+        - file: "images/bai1_06.png"
+          caption: "6. Tệp sau khi đổi tên thành GhiChuQuanTrong.txt"
+        - file: "images/bai1_07.png"
+          caption: "7. Sao chép GhiChuQuanTrong.txt vào thư mục TaiLieu"
+        - file: "images/bai1_08.png"
+          caption: "8. Tạo thêm tệp DiChuyen.txt ở thư mục gốc"
+        - file: "images/bai1_09.png"
+          caption: "9. Nhấp chuột phải vào DiChuyen.txt, chọn Cut để di chuyển"
+        - file: "images/bai1_10.png"
+          caption: "10. Dán vào TaiLieu: thư mục con giờ có DiChuyen.txt và GhiChuQuanTrong.txt"
+        - file: "images/bai1_11.png"
+          caption: "11. Nhấp chuột phải vào GhiChuQuanTrong.txt trong TaiLieu, chọn Delete"
+        - file: "images/bai1_12.png"
+          caption: "12. Sau khi xóa, TaiLieu chỉ còn DiChuyen.txt"
+        - file: "images/bai1_13.png"
+          caption: "13. Xóa nốt DiChuyen.txt, thư mục TaiLieu trống"
 
   - id: 2
     section: "2.4"

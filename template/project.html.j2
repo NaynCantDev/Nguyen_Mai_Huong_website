@@ -199,7 +199,7 @@
         {% if p.product.intro %}<p class="lead">{{ p.product.intro }}</p>{% endif %}
         {% for b in p.product.blocks %}<div class="blk">{{ render_block(b) }}</div>{% endfor %}
         {% if p.product.gallery %}
-        <div class="gallery">
+        <div class="gallery{{ ' grid' if p.product.gallery|length > 3 }}">
           {% for g in p.product.gallery %}<figure><a href="{{ g.src }}" target="_blank" rel="noopener"><img src="{{ g.src }}" alt="{{ g.caption }}" loading="lazy"></a><figcaption>{{ g.caption }}</figcaption></figure>{% endfor %}
         </div>
         {% endif %}

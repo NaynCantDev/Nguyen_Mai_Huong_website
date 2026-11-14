@@ -6,7 +6,7 @@ Portfolio học phần **Nhập môn Công nghệ số và ứng dụng AI (INF2
 - ✅ Giao diện riêng + trang Giới thiệu (thông tin, sở thích, 4 mục tiêu học tập, mục tiêu portfolio)
 - ✅ Trang Bài tập / chi tiết bài / Tổng kết đã dựng sẵn, hỗ trợ đủ các loại khối sản phẩm
 - ✅ Nội dung 6 bài tập & trang Tổng kết đã điền (xem ghi chú bản mẫu bên dưới)
-- ⏳ Lớp, email: chưa có (chân trang theo đề bắt buộc có lớp)
+- ✅ Lớp: INF2501_5 · ⏳ Email: chưa có
 - ⏳ Còn thiếu so với đề: Bài 2 – kết quả tìm kiếm bằng toán tử nâng cao; Bài 4 – minh chứng công cụ quản lý dự án; Bài 5 – link video
 
 ## Ghi chú bản mẫu (không hiển thị trên web)

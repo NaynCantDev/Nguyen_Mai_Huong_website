@@ -10,6 +10,7 @@
 </section>
 
 <section class="wrap conc">
+  {% if c.demo_note %}<aside class="demo-note" role="note"><strong>Bản nháp cần Hương viết lại</strong><p>{{ c.demo_note }}</p></aside>{% endif %}
   <blockquote class="conc-quote"><p>{{ c.experience }}</p></blockquote>
 
   <div class="conc-grid">
@@ -23,6 +24,13 @@
       <div><h2 class="h3">Hướng đi tiếp theo</h2><p>{{ c.future }}</p></div>
     </div>
   </div>
+
+  <h2 class="h3 conc-list-h">Công cụ AI đã sử dụng và mục đích</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Bài</th><th>Công cụ AI và mục đích</th></tr></thead>
+    <tbody>{% for p in projects %}<tr><td><a href="project-{{ p.id }}.html">Bài {{ p.id }}</a></td><td>{{ p.ai_use or '—' }}</td></tr>{% endfor %}
+    <tr><td>Website</td><td>Claude (Anthropic) – hỗ trợ thiết kế giao diện, lập trình và biên tập nội dung trang</td></tr></tbody>
+  </table></div>
 
   <h2 class="h3 conc-list-h">Các bài đã hoàn thành</h2>
   <ol class="mini-set">

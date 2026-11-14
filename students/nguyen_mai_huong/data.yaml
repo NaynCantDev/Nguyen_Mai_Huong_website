@@ -282,6 +282,7 @@ projects:
       - "Khó khăn: Với prompt cơ bản của tác vụ 3, lần chạy đầu ChatGPT trả về dạng trắc nghiệm tương tác nhưng không hiện câu hỏi; chạy lại thì hiện từng câu một, không xem được cả bộ và đáp án – các phiên bản sau thêm yêu cầu “trình bày dạng văn bản để in ra giấy”."
       - "Khó khăn: ChatGPT không đăng nhập không chắc đọc được đường link bài báo – dán cùng một toàn văn bài viết vào cả 3 phiên bản prompt của tác vụ 1 để so sánh công bằng."
     tool: "ChatGPT (bản miễn phí, không đăng nhập)"
+    ai_use: "ChatGPT – chạy và so sánh 9 prompt thử nghiệm (đây là nội dung chính của bài)"
     product:
       intro: "Bảng so sánh 3 phiên bản prompt cho từng tác vụ, kèm trích đoạn kết quả, ảnh chụp màn hình và phân tích. Prompt được ghi nguyên văn; riêng tác vụ 1, phần toàn văn bài viết dán kèm được thay bằng [toàn văn bài viết] cho gọn."
       blocks:
@@ -528,21 +529,100 @@ projects:
     section: "6.4"
     title: "Sử dụng AI có trách nhiệm trong học tập và nghiên cứu"
     chapter: "Chương 6 – An toàn và liêm chính học thuật trong môi trường số"
-    objective: "…"
+    demo_note: "Trang này là bản mẫu do Claude (Anthropic) soạn để hoàn thiện bố cục portfolio, dựa trên khung lý thuyết mục 6.4 của học phần và các bài 1–5 trên trang. Hương cần đọc lại, sửa từng nguyên tắc theo cách mình thật sự làm và viết lại bằng lời của mình trước khi nộp."
+    objective: "Từ khung lý thuyết mục 6.4 của học phần (đạo đức, trách nhiệm và pháp luật khi sử dụng AI và nội dung số), xây dựng bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm trong học tập và nghiên cứu. Bộ nguyên tắc phải cụ thể đến mức áp dụng được ngay: mỗi nguyên tắc gồm một cam kết và một việc làm kiểm tra được, gắn với những tình huống thật của sinh viên Sư phạm Âm nhạc – soạn giáo án, phân tích tác phẩm, làm bài nhạc lý, dùng nhạc và giọng hát do AI tạo."
     process:
-      - "Bước 1: …"
-    tool: "…"
-    ai_use: "…"
+      - "Bước 1 – Đọc khung lý thuyết mục 6.4: ba thách thức của AI tạo sinh với liêm chính học thuật (đạo văn do AI hỗ trợ, “ảo giác”, thiên kiến), năm nguyên tắc sử dụng AI có trách nhiệm, cách trích dẫn nội dung AI theo chuẩn Harvard và các quy định pháp luật cơ bản tại Việt Nam."
+      - "Bước 2 – Nhìn lại 5 bài đã làm để tìm tình huống thật: Bài 2 dùng Gemini tóm tắt tài liệu, Bài 3 thử 9 prompt và phát hiện AI có thể trả lời sai nhạc lý, Bài 5 dùng AI lập lộ trình học guitar và khử nhiễu âm thanh."
+      - "Bước 3 – Viết 5 nguyên tắc cá nhân, mỗi nguyên tắc trả lời hai câu: mình cam kết điều gì và làm cụ thể việc gì để giữ cam kết đó."
+      - "Bước 4 – Thử áp nguyên tắc vào 6 tình huống thường gặp, xếp mỗi tình huống vào một trong ba mức: hợp lệ, vùng xám, vi phạm."
+      - "Bước 5 – Tóm lại thành một bảng kiểm 5 câu hỏi để tự rà trước mỗi lần nộp bài."
+    tool: "Tài liệu học phần mục 6.4, chuẩn trích dẫn Harvard cho nội dung do AI tạo"
+    ai_use: "Claude (Anthropic) – soạn bản mẫu của trang này (xem ghi chú đầu trang)"
     product:
-      intro: "Yêu cầu: trình bày bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm dựa trên các nghiên cứu đã thực hiện."
-      blocks: []
+      intro: "Yêu cầu: trình bày bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm dựa trên các nghiên cứu đã thực hiện. Trang gồm khung lý thuyết làm cơ sở, bộ 5 nguyên tắc, các tình huống áp dụng, mẫu trích dẫn và bảng kiểm trước khi nộp bài."
+      blocks:
+        - type: table
+          title: "Khung lý thuyết làm cơ sở (tóm tắt mục 6.4 của học phần)"
+          headers: ["Nội dung", "Ý chính", "Rút ra cho bản thân"]
+          rows:
+            - ["Đạo văn do AI hỗ trợ (AI-assisted plagiarism)", "Để AI viết lại hoặc tạo nội dung mà người dùng không hiểu, không có đóng góp tư duy", "Bài nộp phải là thứ mình giải thích lại được khi thầy hỏi vấn đáp"]
+            - ["“Ảo giác” (AI hallucination)", "AI tự tin bịa số liệu, sự kiện, cả tài liệu tham khảo không tồn tại", "Mọi trích dẫn và kiến thức nhạc lý từ AI phải tra lại giáo trình"]
+            - ["Thiên kiến (AI bias)", "AI tái tạo định kiến có trong dữ liệu huấn luyện", "Với âm nhạc truyền thống Việt Nam, AI thường thiếu dữ liệu – không dùng AI làm nguồn chính"]
+            - ["Năm nguyên tắc sử dụng AI có trách nhiệm", "Minh bạch, trách nhiệm, trung thực – nguyên bản, con người giám sát, bảo vệ dữ liệu", "Là khung để viết 5 nguyên tắc cá nhân bên dưới"]
+            - ["Pháp luật Việt Nam", "Luật An ninh mạng 2018, Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân, Luật Sở hữu trí tuệ", "Không đưa thông tin học sinh lên AI; tôn trọng bản quyền bản nhạc, bản thu âm"]
+
+        - type: principles
+          title: "Bộ 5 nguyên tắc cá nhân"
+          items:
+            - t: "1. Nói rõ mình đã dùng AI vào việc gì"
+              d: "Cam kết: không giấu việc dùng AI trong bất kỳ bài nộp nào. Việc làm: mỗi bài tập ghi một dòng “Sử dụng AI: công cụ – mục đích”, như ô bên trái của mỗi trang trong portfolio này; nội dung lấy nguyên từ AI thì trích dẫn theo chuẩn Harvard."
+            - t: "2. Nhạc lý và tài liệu phải được tra lại"
+              d: "Cam kết: không tin một kết quả AI chỉ vì nó viết trôi chảy. Việc làm: đối chiếu định nghĩa, ký hiệu, cấu tạo hợp âm với giáo trình nhạc lý; mở từng tài liệu tham khảo AI đưa ra để chắc nó có thật – như cách đã đối chiếu từng câu trả lời ở Bài 3."
+            - t: "3. AI gợi ý, mình làm phần cốt lõi"
+              d: "Cam kết: phần thể hiện năng lực của bài – phân tích tác phẩm, lời bình, ý tưởng giáo án, cảm nhận – do mình tự làm. Việc làm: chỉ dùng AI để gợi ý dàn ý, giải thích khái niệm khó, sửa chính tả; không dán bài làm của AI rồi đổi vài chữ."
+            - t: "4. Tôn trọng bản quyền âm nhạc"
+              d: "Cam kết: nhạc, giọng hát, hình ảnh do AI tạo hay lấy từ người khác đều phải ghi rõ nguồn. Việc làm: khi làm video hoặc bài giảng, ghi tên công cụ AI và tác giả bản nhạc; không dùng AI bắt chước giọng của ca sĩ thật mà chưa được phép."
+            - t: "5. Giữ thông tin của mình và của học sinh"
+              d: "Cam kết: không đưa dữ liệu cá nhân lên công cụ AI công cộng. Việc làm: khi nhờ AI soạn nhận xét hay kế hoạch lớp học, bỏ tên, ảnh, giọng hát và thông tin của học sinh; không tải bản ghi âm của người khác lên khi chưa hỏi ý họ."
+
+        - type: scenarios
+          title: "Áp nguyên tắc vào tình huống thường gặp"
+          items:
+            - v: ok
+              s: "Nhờ AI giải thích vòng quãng năm theo cách dễ hiểu hơn, rồi đối chiếu với giáo trình"
+              r: "AI hỗ trợ hiểu bài, mình vẫn kiểm chứng (nguyên tắc 2, 3)."
+            - v: ok
+              s: "Dùng AI lập lộ trình luyện đàn và ghi rõ trong bài là có dùng"
+              r: "Minh bạch về công cụ và mục đích (nguyên tắc 1), như phần lộ trình guitar ở Bài 5."
+            - v: gray
+              s: "Để AI viết lại đoạn phân tích tác phẩm của mình cho “hay hơn”"
+              r: "Chấp nhận được nếu chỉ sửa câu chữ và có ghi lại; nếu AI thêm ý mới thì đó không còn là bài của mình."
+            - v: gray
+              s: "Dùng nhạc nền do AI tạo trong video bài giảng"
+              r: "Phải đọc điều khoản của công cụ về quyền sử dụng và ghi nguồn trong video (nguyên tắc 4)."
+            - v: bad
+              s: "Nộp nguyên bài cảm nhận về một tác phẩm do AI viết"
+              r: "Cảm nhận phải là của mình; đây là đạo văn do AI hỗ trợ (nguyên tắc 3)."
+            - v: bad
+              s: "Tải bản ghi âm giọng hát của học sinh lên AI để chấm điểm mà không hỏi ý"
+              r: "Vi phạm quyền riêng tư và dữ liệu cá nhân (nguyên tắc 5, Nghị định 13/2023/NĐ-CP)."
+
+        - type: table
+          title: "Mẫu trích dẫn nội dung do AI tạo theo chuẩn Harvard"
+          headers: ["Trường hợp", "Mẫu", "Ví dụ"]
+          rows:
+            - ["Văn bản có URL chia sẻ", "Tên nhà phát triển (Năm). Tên công cụ: Phản hồi cho [người dùng], ngày tháng. Có sẵn tại: URL.", "OpenAI (2026). ChatGPT: Phản hồi cho Nguyễn Mai Hương, [ngày tháng]. Có sẵn tại: [đường link chia sẻ]."]
+            - ["Văn bản không có URL", "Tên nhà phát triển (Năm). Tên công cụ: Phản hồi cho [người dùng], ngày tháng.", "Google (2026). Gemini: Phản hồi cho Nguyễn Mai Hương, [ngày tháng]."]
+            - ["Hình ảnh do AI tạo", "Tên nhà phát triển (Năm). [Mô tả prompt đã dùng]. [Nghệ thuật số].", "OpenAI (2026). [Ảnh minh họa cô giáo dạy guitar cho học sinh tiểu học]. [Nghệ thuật số]."]
+
+        - type: flow
+          title: "Bảng kiểm 5 câu hỏi trước khi nộp bài"
+          items:
+            - "Mình đã ghi rõ công cụ AI và mục đích sử dụng chưa?"
+            - "Kiến thức, số liệu và tài liệu tham khảo AI đưa ra đã được tra lại chưa?"
+            - "Nếu thầy hỏi vấn đáp, mình có tự giải thích được từng phần không?"
+            - "Nhạc, hình ảnh, giọng hát dùng trong bài đã ghi nguồn chưa?"
+            - "Bài có chứa thông tin cá nhân của mình hay của người khác không?"
+
+        - type: note
+          text: "Với người học sư phạm, dùng AI có trách nhiệm còn là việc làm gương: học sinh sẽ học cách dùng AI qua cách cô giáo dùng nó."
       gallery: []
 
 # ⚠ Theo đề: phần cảm nhận, tự đánh giá phải do sinh viên TỰ VIẾT.
+#   Bốn đoạn experience / highlight / challenge / future dưới đây là BẢN NHÁP GỢI Ý
+#   do Claude soạn từ nội dung các bài 1–6 – Hương cần viết lại bằng lời của mình,
+#   rồi xóa dòng demo_note.
 conclusion:
-  experience: "…"
+  demo_note: "Bốn đoạn cảm nhận trên trang này là bản nháp gợi ý do Claude (Anthropic) soạn dựa trên nội dung các bài 1–6. Theo quy định của đề thi, phần cảm nhận và tự đánh giá phải do sinh viên tự viết – Hương cần viết lại bằng trải nghiệm thật của mình trước khi nộp."
+  experience: "Sáu bài tập đi từ việc nhỏ nhất là sắp xếp tệp tin cho gọn, đến tìm và đánh giá tài liệu, viết prompt, họp nhóm trực tuyến, làm video có AI hỗ trợ và tự đặt nguyên tắc dùng AI. Điều mình nhận ra là bài nào cũng có thể quay về âm nhạc: tài liệu về AI trong giáo dục, prompt giải thích vòng quãng năm, video về dạy và học guitar. Công nghệ số không đứng ngoài chuyên ngành mà trở thành một phần của việc học và việc dạy nhạc."
   key_skills:
-    - "…"
-  highlight: "…"
-  challenge: "…"
-  future: "…"
+    - "Tổ chức tệp tin, thư mục trên Windows và đặt tên theo quy tắc thống nhất."
+    - "Tìm tài liệu học thuật, đánh giá độ tin cậy của nguồn và tóm tắt có đối chiếu."
+    - "Viết prompt có vai trò, đối tượng, giới hạn và khuôn đầu ra rõ ràng; kiểm tra lại kết quả của AI."
+    - "Họp và phối hợp trực tuyến, ghi biên bản và phân công công việc."
+    - "Lên ý tưởng và dựng video có AI hỗ trợ, xử lý âm thanh."
+    - "Dùng AI minh bạch, có kiểm chứng và trích dẫn đúng chuẩn."
+  highlight: "Bài mình tâm đắc nhất là video “Ứng dụng AI & Công nghệ số trong Dạy và Học Guitar” ở Bài 5, vì nó nối thẳng việc học công nghệ với nhạc cụ mình yêu thích và cho thấy AI hỗ trợ được việc luyện đàn nhưng không thay được người thầy."
+  challenge: "Khó nhất là giữ thói quen kiểm tra lại kết quả của AI: câu trả lời viết rất trôi chảy nhưng có chỗ chưa đúng nhạc lý hoặc không có nguồn. Cách mình làm là luôn đối chiếu với giáo trình và tài liệu gốc trước khi dùng."
+  future: "Mình muốn tiếp tục dùng công nghệ số để soạn bài giảng âm nhạc sinh động hơn, và mang theo bộ nguyên tắc ở Bài 6 khi đi dạy để hướng dẫn học sinh dùng AI một cách có trách nhiệm."

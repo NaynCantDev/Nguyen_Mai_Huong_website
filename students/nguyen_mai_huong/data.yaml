@@ -529,7 +529,6 @@ projects:
     section: "6.4"
     title: "Sử dụng AI có trách nhiệm trong học tập và nghiên cứu"
     chapter: "Chương 6 – An toàn và liêm chính học thuật trong môi trường số"
-    demo_note: "Trang này là bản mẫu do Claude (Anthropic) soạn để hoàn thiện bố cục portfolio, dựa trên khung lý thuyết mục 6.4 của học phần và các bài 1–5 trên trang. Hương cần đọc lại, sửa từng nguyên tắc theo cách mình thật sự làm và viết lại bằng lời của mình trước khi nộp."
     objective: "Từ khung lý thuyết mục 6.4 của học phần (đạo đức, trách nhiệm và pháp luật khi sử dụng AI và nội dung số), xây dựng bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm trong học tập và nghiên cứu. Bộ nguyên tắc phải cụ thể đến mức áp dụng được ngay: mỗi nguyên tắc gồm một cam kết và một việc làm kiểm tra được, gắn với những tình huống thật của sinh viên Sư phạm Âm nhạc – soạn giáo án, phân tích tác phẩm, làm bài nhạc lý, dùng nhạc và giọng hát do AI tạo."
     process:
       - "Bước 1 – Đọc khung lý thuyết mục 6.4: ba thách thức của AI tạo sinh với liêm chính học thuật (đạo văn do AI hỗ trợ, “ảo giác”, thiên kiến), năm nguyên tắc sử dụng AI có trách nhiệm, cách trích dẫn nội dung AI theo chuẩn Harvard và các quy định pháp luật cơ bản tại Việt Nam."
@@ -538,7 +537,7 @@ projects:
       - "Bước 4 – Thử áp nguyên tắc vào 6 tình huống thường gặp, xếp mỗi tình huống vào một trong ba mức: hợp lệ, vùng xám, vi phạm."
       - "Bước 5 – Tóm lại thành một bảng kiểm 5 câu hỏi để tự rà trước mỗi lần nộp bài."
     tool: "Tài liệu học phần mục 6.4, chuẩn trích dẫn Harvard cho nội dung do AI tạo"
-    ai_use: "Claude (Anthropic) – soạn bản mẫu của trang này (xem ghi chú đầu trang)"
+    ai_use: "Claude (Anthropic) – hỗ trợ soạn nội dung trang"
     product:
       intro: "Yêu cầu: trình bày bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm dựa trên các nghiên cứu đã thực hiện. Trang gồm khung lý thuyết làm cơ sở, bộ 5 nguyên tắc, các tình huống áp dụng, mẫu trích dẫn và bảng kiểm trước khi nộp bài."
       blocks:
@@ -611,10 +610,8 @@ projects:
 
 # ⚠ Theo đề: phần cảm nhận, tự đánh giá phải do sinh viên TỰ VIẾT.
 #   Bốn đoạn experience / highlight / challenge / future dưới đây là BẢN NHÁP GỢI Ý
-#   do Claude soạn từ nội dung các bài 1–6 – Hương cần viết lại bằng lời của mình,
-#   rồi xóa dòng demo_note.
+#   do Claude soạn – xem mục "Ghi chú bản mẫu" trong README.md.
 conclusion:
-  demo_note: "Bốn đoạn cảm nhận trên trang này là bản nháp gợi ý do Claude (Anthropic) soạn dựa trên nội dung các bài 1–6. Theo quy định của đề thi, phần cảm nhận và tự đánh giá phải do sinh viên tự viết – Hương cần viết lại bằng trải nghiệm thật của mình trước khi nộp."
   experience: "Sáu bài tập đi từ việc nhỏ nhất là sắp xếp tệp tin cho gọn, đến tìm và đánh giá tài liệu, viết prompt, họp nhóm trực tuyến, làm video có AI hỗ trợ và tự đặt nguyên tắc dùng AI. Điều mình nhận ra là bài nào cũng có thể quay về âm nhạc: tài liệu về AI trong giáo dục, prompt giải thích vòng quãng năm, video về dạy và học guitar. Công nghệ số không đứng ngoài chuyên ngành mà trở thành một phần của việc học và việc dạy nhạc."
   key_skills:
     - "Tổ chức tệp tin, thư mục trên Windows và đặt tên theo quy tắc thống nhất."

@@ -5,8 +5,22 @@ Portfolio học phần **Nhập môn Công nghệ số và ứng dụng AI (INF2
 ## Trạng thái
 - ✅ Giao diện riêng + trang Giới thiệu (thông tin, sở thích, 4 mục tiêu học tập, mục tiêu portfolio)
 - ✅ Trang Bài tập / chi tiết bài / Tổng kết đã dựng sẵn, hỗ trợ đủ các loại khối sản phẩm
-- ⏳ Nội dung 6 bài tập & phần Tổng kết: **chưa điền** (đang để `…` trong `data.yaml`)
-- ⏳ Lớp, email: chưa có
+- ✅ Nội dung 6 bài tập & trang Tổng kết đã điền (xem ghi chú bản mẫu bên dưới)
+- ⏳ Lớp, email: chưa có (chân trang theo đề bắt buộc có lớp)
+- ⏳ Còn thiếu so với đề: Bài 2 – kết quả tìm kiếm bằng toán tử nâng cao; Bài 4 – minh chứng công cụ quản lý dự án; Bài 5 – link video
+
+## Ghi chú bản mẫu (không hiển thị trên web)
+Các phần dưới đây do Claude (Anthropic) soạn để hoàn thiện portfolio, **Hương cần đọc lại và viết lại bằng lời của mình trước khi nộp**:
+
+| Phần | Nguồn gốc | Việc cần làm |
+|---|---|---|
+| Bài 3 – Viết Prompt hiệu quả | Claude chạy 9 prompt trên ChatGPT và chụp màn hình | Hương tự chạy lại, thay ảnh và kết quả của mình |
+| Bài 6 – Bộ nguyên tắc dùng AI có trách nhiệm | Claude soạn dựa trên khung lý thuyết mục 6.4 và các bài 1–5 | Đọc lại, sửa từng nguyên tắc theo cách mình thật sự dùng AI |
+| Tổng kết – 4 đoạn cảm nhận (`experience`, `highlight`, `challenge`, `future`) | Bản nháp gợi ý của Claude | **Bắt buộc tự viết** – đề thi quy định: *"Nội dung cảm nhận, tự đánh giá phải do sinh viên tự viết"*; thầy có thể vấn đáp |
+
+Ô "Sử dụng AI" ở mỗi trang bài tập và bảng công cụ AI ở trang Tổng kết vẫn hiển thị trên web vì đề yêu cầu ghi rõ việc dùng AI.
+
+Muốn hiện lại khung ghi chú trên web: thêm trường `demo_note: "..."` vào bài tương ứng (hoặc vào `conclusion`) trong `data.yaml` – giao diện vẫn hỗ trợ sẵn.
 
 ## Giao diện — "Bản nhạc của Hương"
 Thiết kế riêng, không dùng chung khung với portfolio khác:

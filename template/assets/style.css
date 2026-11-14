@@ -214,6 +214,7 @@ ul, ol { list-style: none; }
 .proj-ch { margin-top: 12px; font-size: 1.1rem; color: var(--ink-2); }
 
 .proj { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: clamp(32px, 6vw, 80px); padding: 56px 0 clamp(64px, 9vw, 112px); }
+.proj > * { min-width: 0; }
 .proj-side { position: sticky; top: 92px; align-self: start; }
 .facts.tight { grid-template-columns: 1fr; margin-top: 0; }
 .facts.tight > div { padding: 10px 0; }
